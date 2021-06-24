@@ -1,0 +1,52 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         proc import datafile="/home/u58811620/CISP357/data/BitcoinData.xlsx"
+ 74         dbms=xlsx out=Bitcoin replace;
+ 75         run;
+ 
+ NOTE: One or more variables were converted because the data type is not supported by the V9 engine. For more details, run with 
+       options MSGLEVEL=I.
+ NOTE: The import data set has 366 observations and 7 variables.
+ NOTE: WORK.BITCOIN data set was successfully created.
+ NOTE: PROCEDURE IMPORT used (Total process time):
+       real time           0.04 seconds
+       user cpu time       0.04 seconds
+       system cpu time     0.00 seconds
+       memory              3186.03k
+       OS Memory           32680.00k
+       Timestamp           06/24/2021 08:09:31 PM
+       Step Count                        96  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     913
+       Page Swaps                        0
+       Voluntary Context Switches        18
+       Involuntary Context Switches      0
+       Block Input Operations            8
+       Block Output Operations           264
+       
+ 
+ 76         
+ 77         proc contents data=Bitcoin;
+ 78         run;
+ 
+ NOTE: PROCEDURE CONTENTS used (Total process time):
+       real time           0.06 seconds
+       user cpu time       0.07 seconds
+       system cpu time     0.00 seconds
+       memory              3102.43k
+       OS Memory           32684.00k
+       Timestamp           06/24/2021 08:09:31 PM
+       Step Count                        97  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     794
+       Page Swaps                        0
+       Voluntary Context Switches        0
+       Involuntary Context Switches      1
+       Block Input Operations            0
+       Block Output Operations           16
+       
+ 
+ 79         
+ 80         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 92         
