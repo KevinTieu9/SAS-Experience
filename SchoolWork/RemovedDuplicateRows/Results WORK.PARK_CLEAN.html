@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html class="ods_bb0e549f-5d4a-4430-b236-e8102bf85803" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>Results: WORK.PARK_CLEAN</title>
+<style>
+/*<![CDATA[*/
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.c section > table, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.c section > pre, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.c div > table,
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.c div > pre, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.c article > table, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.c article > pre,
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.j section > table, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.j section > pre, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.j div > table,
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.j div > pre, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.j article > table, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.j article > pre,
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.c p.note, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.c p.warning, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.c p.error, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.c p.fatal,
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.j p.note, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.j p.warning, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.j p.error, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.j p.fatal,
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.c > table.layoutcontainer, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.l table, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.l pre, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.l p.note,
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.l p.warning, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.l p.error, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.l p.fatal { margin-left: 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.c table, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.c pre, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.c p.note,
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.c p.warning, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.c p.error, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.r table, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.r pre, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.r p.note,
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.r table, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.r pre, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.r p.note,
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.r p.warning, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.r p.error, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion.r p.fatal { margin-right: 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 article, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 aside, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 details, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 figcaption, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 figure, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 footer, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 header, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 hgroup, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 nav, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 section { display: block }
+html.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 { font-size: 100% }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 ul, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 dd { margin: 0 0 0 40px }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 nav ul, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 img { border: 0; vertical-align: middle }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 svg:not(:root) { overflow: hidden }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 figure { margin: 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 table { border-collapse: collapse; border-spacing: 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 p { margin-top: 0; text-align: left }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 h1.heading1 { text-align: left }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 h2.heading2 { text-align: left }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 h3.heading3 { text-align: left }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 h4.heading4 { text-align: left }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 h5.heading5 { text-align: left }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 h6.heading6 { text-align: left }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 span { text-align: left }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 table { margin-bottom: 1em }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 td, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 td[class$="fixed"], .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 th[class$="fixed"] { white-space: pre }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 section, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 article { padding-top: 1px; padding-bottom: 8px }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .stacked-value { text-align: left; display: block }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .stacked-cell > .stacked-value, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 td.data > td.data, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 th.data > td.data, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 th.data > th.data, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 td.data > th.data, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 th.header > th.header { border: 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .stacked-cell > div.data { border-width: 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systitleandfootercontainer > p { margin: 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .batch { display: table }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .toc { display: none }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .proc_note_group, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .proc_title_group { margin-bottom: 1em }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 p.proctitle { margin: 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 p.note, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 p.warning, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 p.error, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 p.fatal { display: table }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .notebanner, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .warnbanner, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .errorbanner, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .fatalbanner,
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .notecontent, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .warncontent, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .errorcontent, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .notebanner, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .warnbanner, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .errorbanner, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .fatalbanner { padding-right: 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body > div > ol li { text-align: left }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .c { text-align: center }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .r { text-align: right }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .l { text-align: left }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .j { text-align: justify }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .d { text-align: right }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .b { vertical-align: bottom }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .m { vertical-align: middle }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .t { vertical-align: top }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 a:active { color: #800080 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .batch > tbody, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .batch > thead, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .batch { border: hidden; }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .bycontentfolder {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .bylinecontainer > col, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .bylinecontainer > colgroup > col, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .bylinecontainer > colgroup, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .bylinecontainer > tr, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .bylinecontainer > * > tr, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .bylinecontainer > thead, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .bylinecontainer > tbody, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .bylinecontainer > tfoot { border: none; }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .cell, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .contentfolder, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .contentitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .contentproclabel, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .data, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .folderaction {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .graph > tbody, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .graph > thead, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .graph { border: hidden; }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .heading1, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .heading2, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .heading3, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .heading4, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .heading5, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .heading6 { font-family: Arial, Helvetica, sans-serif }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .indexaction, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .indexitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutcontainer, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 a:link { color: #0000ff }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .list3, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .list4, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .list5, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .list6, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .list7, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .list8, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .listitem3, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .listitem4, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .listitem5, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .listitem6, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .listitem7, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .listitem8, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .output > tbody, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .output > thead, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .output { border: hidden; }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .pagesitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .pagesproclabel, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .parskip > col, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .parskip > colgroup > col, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .parskip > colgroup, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .parskip > tr, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .parskip > * > tr, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .parskip > thead, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .parskip > tbody, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .parskip > tfoot { border: none; }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemfooter, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemfooter10, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemfooter2, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemfooter3, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemfooter4, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemfooter5, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemfooter6, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemfooter7, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemfooter8, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemtitle, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemtitle10, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemtitle2, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemtitle3, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemtitle4, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemtitle5, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemtitle6, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemtitle7, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemtitle8, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systitleandfootercontainer > col, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systitleandfootercontainer > colgroup > col, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systitleandfootercontainer > colgroup, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systitleandfootercontainer > tr, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systitleandfootercontainer > * > tr, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systitleandfootercontainer > thead, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systitleandfootercontainer > tbody, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systitleandfootercontainer > tfoot { border: none; }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .table > col, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .table > tr, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .table { border: hidden; }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .titleandnotecontainer > col, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .titleandnotecontainer > colgroup > col, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .titleandnotecontainer > colgroup, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .titleandnotecontainer > tr, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .titleandnotecontainer > * > tr, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .titleandnotecontainer > thead, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .titleandnotecontainer > tbody, .ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .titleandnotecontainer > tfoot { border: none; }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 a:visited { color: #800080 }
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_bb0e549f-5d4a-4430-b236-e8102bf85803 .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_bb0e549f-5d4a-4430-b236-e8102bf85803" class="c body">
+<h1 class="body toc">Results: WORK.PARK_CLEAN</h1>
+<section data-name="Print" data-sec-type="proc">
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article id="IDX" aria-label="Data Set WORK.PARK_CLEAN">
+<h1 class="contentitem toc">Data Set WORK.PARK_CLEAN</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.PARK_CLEAN">
+<caption aria-label="Data Set WORK.PARK_CLEAN"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="header" scope="col">UnitCode</th>
+<th class="header" scope="col">AreaName</th>
+<th class="header" scope="col">State</th>
+<th class="header" scope="col">Reg</th>
+<th class="r header" scope="col">GrossAcres</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">ACAD</td>
+<td class="data">ACADIA NP</td>
+<td class="data">ME</td>
+<td class="data">NE</td>
+<td class="r data">49057.36</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">AMIS</td>
+<td class="data">AMISTAD NRA</td>
+<td class="data">TX</td>
+<td class="data">IM</td>
+<td class="r data">58500.00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">APIS</td>
+<td class="data">APOSTLE ISLANDS NL</td>
+<td class="data">WI</td>
+<td class="data">MW</td>
+<td class="r data">69377.43</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">ARCH</td>
+<td class="data">ARCHES NP</td>
+<td class="data">UT</td>
+<td class="data">IM</td>
+<td class="r data">76678.98</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">ASIS</td>
+<td class="data">ASSATEAGUE ISLAND NS</td>
+<td class="data">MD-VA 2/</td>
+<td class="data">NE</td>
+<td class="r data">41346.50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">BADL</td>
+<td class="data">BADLANDS NP</td>
+<td class="data">SD</td>
+<td class="data">MW</td>
+<td class="r data">242755.94</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">BAND</td>
+<td class="data">BANDELIER NM</td>
+<td class="data">NM</td>
+<td class="data">IM</td>
+<td class="r data">33676.67</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">BELA</td>
+<td class="data">BERING LAND BRIDGE N PRES</td>
+<td class="data">AK</td>
+<td class="data">A</td>
+<td class="r data">2697391.01</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">BIBE</td>
+<td class="data">BIG BEND NP</td>
+<td class="data">TX</td>
+<td class="data">IM</td>
+<td class="r data">801163.21</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">BICA</td>
+<td class="data">BIGHORN CANYON NRA</td>
+<td class="data">MT-WY</td>
+<td class="data">IM</td>
+<td class="r data">120296.22</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="data">BICY</td>
+<td class="data">BIG CYPRESS N PRESERVE</td>
+<td class="data">FL 5/</td>
+<td class="data">SE</td>
+<td class="r data">574453.32</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="data">BISC</td>
+<td class="data">BISCAYNE NP</td>
+<td class="data">FL</td>
+<td class="data">SE</td>
+<td class="r data">172971.11</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="data">BITH</td>
+<td class="data">BIG THICKET N PRESERVE</td>
+<td class="data">TX</td>
+<td class="data">IM</td>
+<td class="r data">112500.81</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="data">BIXO</td>
+<td class="data">BIG SOUTH FORK RA &amp; NR</td>
+<td class="data">KY-TN</td>
+<td class="data">SE</td>
+<td class="r data">123694.10</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="data">BLCA</td>
+<td class="data">BLACK CANYON OF GUNNISON NP</td>
+<td class="data">CO</td>
+<td class="data">IM</td>
+<td class="r data">30749.75</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="data">BLRI</td>
+<td class="data">BLUE RIDGE PKWY</td>
+<td class="data">NC-VA</td>
+<td class="data">NT</td>
+<td class="r data">98774.04</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="data">BRCA</td>
+<td class="data">BRYCE CANYON NP</td>
+<td class="data">UT</td>
+<td class="data">IM</td>
+<td class="r data">35835.08</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="data">BUFF</td>
+<td class="data">BUFFALO N RVR</td>
+<td class="data">AR</td>
+<td class="data">MW</td>
+<td class="r data">94293.31</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="data">BUIS</td>
+<td class="data">BUCK ISLAND REEF NM</td>
+<td class="data">VI</td>
+<td class="data">SE</td>
+<td class="r data">19015.47</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="data">CACH</td>
+<td class="data">CANYON DE CHELLY NM</td>
+<td class="data">AZ</td>
+<td class="data">IM</td>
+<td class="r data">83840.00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="data">CACO</td>
+<td class="data">CAPE COD NS</td>
+<td class="data">MA</td>
+<td class="data">NE</td>
+<td class="r data">43608.43</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="data">CAHA</td>
+<td class="data">CAPE HATTERAS NS</td>
+<td class="data">NC</td>
+<td class="data">SE</td>
+<td class="r data">30350.65</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="data">CAKR</td>
+<td class="data">CAPE KRUSENSTERN NM</td>
+<td class="data">AK</td>
+<td class="data">A</td>
+<td class="r data">649096.15</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="data">CALO</td>
+<td class="data">CAPE LOOKOUT NS</td>
+<td class="data">NC</td>
+<td class="data">SE</td>
+<td class="r data">28243.36</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="data">CANA</td>
+<td class="data">CANAVERAL NS</td>
+<td class="data">FL</td>
+<td class="data">SE</td>
+<td class="r data">57661.69</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="data">CANY</td>
+<td class="data">CANYONLANDS NP</td>
+<td class="data">UT</td>
+<td class="data">IM</td>
+<td class="r data">337597.83</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="data">CARE</td>
+<td class="data">CAPITOL REEF NP</td>
+<td class="data">UT</td>
+<td class="data">IM</td>
+<td class="r data">241904.26</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="data">CAVE</td>
+<td class="data">CARLSBAD CAVERNS NP</td>
+<td class="data">NM</td>
+<td class="data">IM</td>
+<td class="r data">46766.45</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="data">CHAT</td>
+<td class="data">CHATTAHOOCHEE RVR NRA</td>
+<td class="data">GA</td>
+<td class="data">SE</td>
+<td class="r data">10550.06</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="data">CHCU</td>
+<td class="data">CHACO CULTURE NHP</td>
+<td class="data">TX</td>
+<td class="data">IM</td>
+<td class="r data">33960.19</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="data">CHIR</td>
+<td class="data">CHIRICAHUA NM</td>
+<td class="data">AZ</td>
+<td class="data">IM</td>
+<td class="r data">12024.73</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="data">CHIS</td>
+<td class="data">CHANNEL ISLANDS NP</td>
+<td class="data">CA</td>
+<td class="data">PW</td>
+<td class="r data">249561.00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="data">CIRO</td>
+<td class="data">CITY OF ROCKS NRESERVE</td>
+<td class="data">ID</td>
+<td class="data">PW</td>
+<td class="r data">14407.19</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="data">COLM</td>
+<td class="data">COLORADO NM</td>
+<td class="data">CO</td>
+<td class="data">IM</td>
+<td class="r data">20536.39</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="data">CONG</td>
+<td class="data">CONGAREE NP</td>
+<td class="data">SC</td>
+<td class="data">SE</td>
+<td class="r data">26275.82</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="data">CRLA</td>
+<td class="data">CRATER LAKE NP</td>
+<td class="data">OR</td>
+<td class="data">PW</td>
+<td class="r data">183224.05</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="data">CRMO</td>
+<td class="data">CRATERS OF THE MOON NM</td>
+<td class="data">ID</td>
+<td class="data">PW</td>
+<td class="r data">553571.05</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="data">CUGA</td>
+<td class="data">CUMBERLAND GAP NHP</td>
+<td class="data">KY-TN-VA</td>
+<td class="data">SE</td>
+<td class="r data">24546.83</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="data">CUIS</td>
+<td class="data">CUMBERLAND ISLAND NS</td>
+<td class="data">GA</td>
+<td class="data">SE</td>
+<td class="r data">36346.83</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="data">CURE</td>
+<td class="data">CURECANTI NRA</td>
+<td class="data">CO 1/</td>
+<td class="data">IM</td>
+<td class="r data">43094.72</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="data">CUVA</td>
+<td class="data">CUYAHOGA VALLEY NP</td>
+<td class="data">OH</td>
+<td class="data">MW</td>
+<td class="r data">32572.35</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="data">DENA</td>
+<td class="data">DENALI NP &amp; PRES</td>
+<td class="data">AK</td>
+<td class="data">A</td>
+<td class="r data">6036890.48</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="data">DEVA</td>
+<td class="data">DEATH VALLEY NP</td>
+<td class="data">CA-NV</td>
+<td class="data">PW</td>
+<td class="r data">3373063.14</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="data">DEWA</td>
+<td class="data">DEL WATER GAP NRA</td>
+<td class="data">NJ-PA</td>
+<td class="data">NE</td>
+<td class="r data">67608.20</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="data">DINO</td>
+<td class="data">DINOSAUR NM</td>
+<td class="data">CO-UT</td>
+<td class="data">IM</td>
+<td class="r data">210281.92</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="data">DRTO</td>
+<td class="data">DRY TORTUGAS NP</td>
+<td class="data">FL</td>
+<td class="data">SE</td>
+<td class="r data">64701.22</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="data">EBLA</td>
+<td class="data">EBEY&apos;S LANDING NH RES</td>
+<td class="data">WA</td>
+<td class="data">PW</td>
+<td class="r data">19333.01</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="data">ELMA</td>
+<td class="data">EL MALPAIS NM</td>
+<td class="data">NM</td>
+<td class="data">IM</td>
+<td class="r data">114347.11</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="data">EVER</td>
+<td class="data">EVERGLADES NP</td>
+<td class="data">FL 6/</td>
+<td class="data">SE</td>
+<td class="r data">1400539.30</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="data">FIIS</td>
+<td class="data">FIRE ISLAND NS</td>
+<td class="data">NY</td>
+<td class="data">NE</td>
+<td class="r data">19580.42</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="data">GARI</td>
+<td class="data">GAULEY RIVER NRA</td>
+<td class="data">WV</td>
+<td class="data">NE</td>
+<td class="r data">11566.46</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="data">GLAC</td>
+<td class="data">GLACIER NP</td>
+<td class="data">MT</td>
+<td class="data">IM</td>
+<td class="r data">1013128.94</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="data">GLCA</td>
+<td class="data">GLEN CANYON NRA</td>
+<td class="data">AZ-UT</td>
+<td class="data">IM</td>
+<td class="r data">1254116.62</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="data">GOGA</td>
+<td class="data">GOLDEN GATE NRA</td>
+<td class="data">CA</td>
+<td class="data">PW</td>
+<td class="r data">82026.86</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="data">GRBA</td>
+<td class="data">GREAT BASIN NP</td>
+<td class="data">NV</td>
+<td class="data">PW</td>
+<td class="r data">77180.00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="data">GRCA</td>
+<td class="data">GRAND CANYON NP</td>
+<td class="data">AZ</td>
+<td class="data">IM</td>
+<td class="r data">1201647.03</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="data">GRSM</td>
+<td class="data">GREAT SMOKY MTS NP</td>
+<td class="data">TN-NC</td>
+<td class="data">SE</td>
+<td class="r data">522426.88</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="data">GRTE</td>
+<td class="data">GRAND TETON NP</td>
+<td class="data">WY</td>
+<td class="data">IM</td>
+<td class="r data">310043.96</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="data">GUIS</td>
+<td class="data">GULF ISLANDS NS</td>
+<td class="data">FL-MS</td>
+<td class="data">SE</td>
+<td class="r data">138305.52</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="data">GUMO</td>
+<td class="data">GUADALUPE MTS NP</td>
+<td class="data">TX</td>
+<td class="data">IM</td>
+<td class="r data">86367.10</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="data">HALE</td>
+<td class="data">HALEAKALA NP</td>
+<td class="data">HI</td>
+<td class="data">PW</td>
+<td class="r data">33264.62</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="data">HAVO</td>
+<td class="data">HAWAII VOLCANOES NP</td>
+<td class="data">HI</td>
+<td class="data">PW</td>
+<td class="r data">323431.38</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="data">INDU</td>
+<td class="data">INDIANA DUNES NL</td>
+<td class="data">IN</td>
+<td class="data">MW</td>
+<td class="r data">15347.13</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="data">ISRO</td>
+<td class="data">ISLE ROYALE NP</td>
+<td class="data">MI</td>
+<td class="data">MW</td>
+<td class="r data">571790.11</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="data">JELA</td>
+<td class="data">JEAN LAFITTE NHP &amp;PRES</td>
+<td class="data">LA</td>
+<td class="data">SE</td>
+<td class="r data">22420.86</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="data">JODA</td>
+<td class="data">JOHN DAY FOS BEDS NM</td>
+<td class="data">OR</td>
+<td class="data">PW</td>
+<td class="r data">14062.02</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="data">JOTR</td>
+<td class="data">JOSHUA TREE NP</td>
+<td class="data">CA</td>
+<td class="data">PW</td>
+<td class="r data">790635.74</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">68</th>
+<td class="data">KALA</td>
+<td class="data">KALAUPAPA NHP</td>
+<td class="data">HI</td>
+<td class="data">PW</td>
+<td class="r data">10778.88</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">69</th>
+<td class="data">KEFJ</td>
+<td class="data">KENAI FJORDS NP</td>
+<td class="data">AK</td>
+<td class="data">A</td>
+<td class="r data">669650.05</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">70</th>
+<td class="data">KICA</td>
+<td class="data">KINGS CANYON NP</td>
+<td class="data">CA</td>
+<td class="data">PW</td>
+<td class="r data">461901.20</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">71</th>
+<td class="data">KOVA</td>
+<td class="data">KOBUK VALLEY NP</td>
+<td class="data">AK</td>
+<td class="data">A</td>
+<td class="r data">1750716.16</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">72</th>
+<td class="data">LABE</td>
+<td class="data">LAVA BEDS NM</td>
+<td class="data">CA</td>
+<td class="data">PW</td>
+<td class="r data">46692.42</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">73</th>
+<td class="data">LACH</td>
+<td class="data">LAKE CHELAN NRA</td>
+<td class="data">WA</td>
+<td class="data">PW</td>
+<td class="r data">61946.27</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">74</th>
+<td class="data">LAKE</td>
+<td class="data">LAKE MEAD NRA</td>
+<td class="data">AZ-NV</td>
+<td class="data">PW</td>
+<td class="r data">1495805.53</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">75</th>
+<td class="data">LAMR</td>
+<td class="data">LAKE MEREDITH NRA</td>
+<td class="data">TX</td>
+<td class="data">IM</td>
+<td class="r data">44977.63</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">76</th>
+<td class="data">LARO</td>
+<td class="data">LAKE ROOSEVELT NRA</td>
+<td class="data">WA 1/</td>
+<td class="data">PW</td>
+<td class="r data">100390.31</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">77</th>
+<td class="data">LAVO</td>
+<td class="data">LASSEN VOLCANIC NP</td>
+<td class="data">CA</td>
+<td class="data">PW</td>
+<td class="r data">106589.02</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">78</th>
+<td class="data">LIRI</td>
+<td class="data">LITTLE RIVER CANYON NP</td>
+<td class="data">AL</td>
+<td class="data">SE</td>
+<td class="r data">15288.53</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">79</th>
+<td class="data">MACA</td>
+<td class="data">MAMMOTH CAVE NP</td>
+<td class="data">KY</td>
+<td class="data">SE</td>
+<td class="r data">52830.19</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">80</th>
+<td class="data">MEVE</td>
+<td class="data">MESA VERDE NP</td>
+<td class="data">CO</td>
+<td class="data">IM</td>
+<td class="r data">52485.17</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">81</th>
+<td class="data">MISS</td>
+<td class="data">MISSISSIPPI N RA &amp; RVR</td>
+<td class="data">MN</td>
+<td class="data">MW</td>
+<td class="r data">53775.00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">82</th>
+<td class="data">MNRR</td>
+<td class="data">MISSOURI N REC RIVER</td>
+<td class="data">SD-NE</td>
+<td class="data">MW</td>
+<td class="r data">48456.55</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">83</th>
+<td class="data">MOJA</td>
+<td class="data">MOJAVE NATIONAL PRESERVE</td>
+<td class="data">CA</td>
+<td class="data">PW</td>
+<td class="r data">1542775.80</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">84</th>
+<td class="data">MORA</td>
+<td class="data">MT RAINIER NP</td>
+<td class="data">WA</td>
+<td class="data">PW</td>
+<td class="r data">236381.64</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">85</th>
+<td class="data">NATR</td>
+<td class="data">NATCHEZ TRACE PKWY</td>
+<td class="data">TN-MS-AL</td>
+<td class="data">SE</td>
+<td class="r data">52302.00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">86</th>
+<td class="data">NERI</td>
+<td class="data">NEW RIVER GORGE N RVR</td>
+<td class="data">WV</td>
+<td class="data">NE</td>
+<td class="r data">72185.76</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">87</th>
+<td class="data">NIOB</td>
+<td class="data">NIOBRARA N. SCENIC RIVER</td>
+<td class="data">NE</td>
+<td class="data">MW</td>
+<td class="r data">29101.02</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">88</th>
+<td class="data">NOAT</td>
+<td class="data">NOATAK N PRESERVE</td>
+<td class="data">AK</td>
+<td class="data">A</td>
+<td class="r data">6587071.39</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">89</th>
+<td class="data">NOCA</td>
+<td class="data">NORTH CASCADES NP</td>
+<td class="data">WA</td>
+<td class="data">PW</td>
+<td class="r data">504780.94</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">90</th>
+<td class="data">OLYM</td>
+<td class="data">OLYMPIC NP</td>
+<td class="data">WA</td>
+<td class="data">PW</td>
+<td class="r data">922650.10</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">91</th>
+<td class="data">ORPI</td>
+<td class="data">ORGAN PIPE CACTUS NM</td>
+<td class="data">AZ</td>
+<td class="data">IM</td>
+<td class="r data">330688.86</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">92</th>
+<td class="data">OZAR</td>
+<td class="data">OZARK NS RIVERWAYS</td>
+<td class="data">MO</td>
+<td class="data">MW</td>
+<td class="r data">80785.04</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">93</th>
+<td class="data">PAIS</td>
+<td class="data">PADRE ISLAND NS</td>
+<td class="data">TX</td>
+<td class="data">IM</td>
+<td class="r data">130434.27</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">94</th>
+<td class="data">PEFO</td>
+<td class="data">PETRIFIED FOREST NP</td>
+<td class="data">AZ</td>
+<td class="data">IM</td>
+<td class="r data">221415.77</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">95</th>
+<td class="data">PINN</td>
+<td class="data">PINNACLES NP</td>
+<td class="data">CA</td>
+<td class="data">IM</td>
+<td class="r data">26685.73</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">96</th>
+<td class="data">PIRO</td>
+<td class="data">PICTURED ROCKS NL</td>
+<td class="data">MI</td>
+<td class="data">PW</td>
+<td class="r data">73235.83</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">97</th>
+<td class="data">PORE</td>
+<td class="data">POINT REYES NS</td>
+<td class="data">CA CA</td>
+<td class="data">PW</td>
+<td class="r data">71055.41</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">98</th>
+<td class="data">PRWI</td>
+<td class="data">PRINCE WM FOREST PARK</td>
+<td class="data">VA</td>
+<td class="data">NC</td>
+<td class="r data">16080.82</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">99</th>
+<td class="data">REDW</td>
+<td class="data">REDWOOD NP</td>
+<td class="data">CA</td>
+<td class="data">PW</td>
+<td class="r data">138999.97</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">100</th>
+<td class="data">ROLA</td>
+<td class="data">ROSS LAKE NRA</td>
+<td class="data">WA</td>
+<td class="data">PW</td>
+<td class="r data">117574.59</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">101</th>
+<td class="data">ROMO</td>
+<td class="data">ROCKY MT NP</td>
+<td class="data">CO</td>
+<td class="data">IM</td>
+<td class="r data">265795.20</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">102</th>
+<td class="data">SACN</td>
+<td class="data">SAINT CROIX NSR</td>
+<td class="data">MN-WI</td>
+<td class="data">MW</td>
+<td class="r data">67466.63</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">103</th>
+<td class="data">SAGU</td>
+<td class="data">SAGUARO NP</td>
+<td class="data">AZ</td>
+<td class="data">IM</td>
+<td class="r data">91715.72</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">104</th>
+<td class="data">SAMO</td>
+<td class="data">SANTA MONICA MTS NRA</td>
+<td class="data">CA</td>
+<td class="data">PW</td>
+<td class="r data">156671.18</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">105</th>
+<td class="data">SAND</td>
+<td class="data">SAND CREEK MASSACRE NHS</td>
+<td class="data">CO</td>
+<td class="data">IM</td>
+<td class="r data">12583.34</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">106</th>
+<td class="data">SEQU</td>
+<td class="data">SEQUOIA NP</td>
+<td class="data">CA</td>
+<td class="data">PW</td>
+<td class="r data">404062.63</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">107</th>
+<td class="data">SHEN</td>
+<td class="data">SHENANDOAH NP</td>
+<td class="data">VA</td>
+<td class="data">NE</td>
+<td class="r data">199195.27</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">108</th>
+<td class="data">SLBE</td>
+<td class="data">SLEEPING BEAR DUNES NL</td>
+<td class="data">MI</td>
+<td class="data">MW</td>
+<td class="r data">71205.06</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">109</th>
+<td class="data">TAPR</td>
+<td class="data">TALLGRASS PRAIRIE NPRE</td>
+<td class="data">KS</td>
+<td class="data">MW</td>
+<td class="r data">10882.67</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">110</th>
+<td class="data">THRO</td>
+<td class="data">T ROOSEVELT NP</td>
+<td class="data">ND</td>
+<td class="data">MW</td>
+<td class="r data">70446.89</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">111</th>
+<td class="data">TIMU</td>
+<td class="data">TIMUCUAN ECO &amp; H PRES</td>
+<td class="data">FL</td>
+<td class="data">SE</td>
+<td class="r data">46262.67</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">112</th>
+<td class="data">UPDE</td>
+<td class="data">UPPER DEL SCENIC &amp; R RVR</td>
+<td class="data">NY-PA</td>
+<td class="data">NE</td>
+<td class="r data">74999.56</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">113</th>
+<td class="data">VALL</td>
+<td class="data">VALLES CALDERA N PRES</td>
+<td class="data">NM</td>
+<td class="data">IM</td>
+<td class="r data">89766.09</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">114</th>
+<td class="data">VIIS</td>
+<td class="data">VIRGIN ISLANDS NP</td>
+<td class="data">VI</td>
+<td class="data">SE</td>
+<td class="r data">14948.46</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">115</th>
+<td class="data">VOYA</td>
+<td class="data">VOYAGEURS NP</td>
+<td class="data">MN</td>
+<td class="data">MW</td>
+<td class="r data">218200.15</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">116</th>
+<td class="data">WHIS</td>
+<td class="data">WHISKEYTOWN-S-T NRA</td>
+<td class="data">CA 3/</td>
+<td class="data">PW</td>
+<td class="r data">42503.25</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">117</th>
+<td class="data">WHSA</td>
+<td class="data">WHITE SANDS NM</td>
+<td class="data">NM</td>
+<td class="data">IM</td>
+<td class="r data">143733.25</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">118</th>
+<td class="data">WICA</td>
+<td class="data">WIND CAVE NP</td>
+<td class="data">SD</td>
+<td class="data">MW</td>
+<td class="r data">33970.84</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">119</th>
+<td class="data">WRST</td>
+<td class="data">WRANGELL-ST ELIAS NP</td>
+<td class="data">AK</td>
+<td class="data">A</td>
+<td class="r data">8323146.48</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">120</th>
+<td class="data">WUPA</td>
+<td class="data">WUPATKI NM</td>
+<td class="data">AZ</td>
+<td class="data">IM</td>
+<td class="r data">35422.13</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">121</th>
+<td class="data">YELL</td>
+<td class="data">YELLOWSTONE NP</td>
+<td class="data">ID-MT-WY</td>
+<td class="data">IM</td>
+<td class="r data">2219790.71</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">122</th>
+<td class="data">YUCH</td>
+<td class="data">YUKON-CHARLEY RIVERS N PR</td>
+<td class="data">AK</td>
+<td class="data">A</td>
+<td class="r data">2523512.44</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">123</th>
+<td class="data">ZION</td>
+<td class="data">ZION NP</td>
+<td class="data">UT</td>
+<td class="data">IM</td>
+<td class="r data">147237.02</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         /*Question 3-4:
+ 74         There were 25 observations read from the data set PG1.EU_OCC.
+ 75                WHERE Hotel>40000000;
+ 76         
+ 77             July and August is listed in the report, so 2 months.*/
+ 78         proc print data=pg1.eu_occ;
+ 79         where Hotel > 40000000;
+ 80         run;
+ 
+ NOTE: There were 25 observations read from the data set PG1.EU_OCC.
+       WHERE Hotel>40000000;
+ NOTE: PROCEDURE PRINT used (Total process time):
+       real time           0.06 seconds
+       user cpu time       0.06 seconds
+       system cpu time     0.00 seconds
+       memory              2992.18k
+       OS Memory           32812.00k
+       Timestamp           07/01/2021 12:58:31 AM
+       Step Count                        356  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     263
+       Page Swaps                        0
+       Voluntary Context Switches        6
+       Involuntary Context Switches      1
+       Block Input Operations            0
+       Block Output Operations           16
+       
+ 
+ 81         
+ 82         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 94         

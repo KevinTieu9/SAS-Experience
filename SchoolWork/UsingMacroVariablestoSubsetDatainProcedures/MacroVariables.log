@@ -1,0 +1,179 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 74         
+ 75         /*Question/Step 1-2 answers*/
+ 76         proc freq data=pg1.np_species;
+ 77         tables Abundance Conservation_Status;
+ 78         where Species_ID like "YOSE%" and Category="Mammal";
+ 79         run;
+ 
+ NOTE: There were 16 observations read from the data set PG1.NP_SPECIES.
+       WHERE Species_ID like 'YOSE%' and (Category='Mammal');
+ NOTE: PROCEDURE FREQ used (Total process time):
+       real time           0.05 seconds
+       user cpu time       0.05 seconds
+       system cpu time     0.01 seconds
+       memory              3966.90k
+       OS Memory           34220.00k
+       Timestamp           07/01/2021 02:57:19 AM
+       Step Count                        564  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     500
+       Page Swaps                        0
+       Voluntary Context Switches        15
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           272
+       
+ 
+ 80         
+ 81         proc print data=pg1.np_species;
+ 82         var Species_ID Category Scientific_Name Common_Names;
+ 83         where Species_ID like "YOSE%" and Category="Mammal";
+ 84         run;
+ 
+ NOTE: There were 16 observations read from the data set PG1.NP_SPECIES.
+       WHERE Species_ID like 'YOSE%' and (Category='Mammal');
+ NOTE: PROCEDURE PRINT used (Total process time):
+       real time           0.03 seconds
+       user cpu time       0.04 seconds
+       system cpu time     0.00 seconds
+       memory              2588.90k
+       OS Memory           34732.00k
+       Timestamp           07/01/2021 02:57:19 AM
+       Step Count                        565  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     312
+       Page Swaps                        0
+       Voluntary Context Switches        1
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           8
+       
+ 
+ 85         
+ 86         /*Question 3
+ 87         There were 16 observations read from the data set PG1.NP_SPECIES.
+ 88         WHERE species_Id like 'YOSE%' and (Category='Mammal');*/
+ 89         
+ 90         /*Question/Step 4 Answers*/
+ 91         %let ParkCode=YOSE;
+ 92         %let SpeciesCat=Mammal;
+ 93         
+ 94         proc freq data=pg1.np_species;
+ 95         tables Abundance Conservation_Status;
+ 96         where Species_ID like "&ParkCode%" and Category="&SpeciesCat";
+ 97         run;
+ 
+ NOTE: There were 16 observations read from the data set PG1.NP_SPECIES.
+       WHERE Species_ID like 'YOSE%' and (Category='Mammal');
+ NOTE: PROCEDURE FREQ used (Total process time):
+       real time           0.03 seconds
+       user cpu time       0.03 seconds
+       system cpu time     0.00 seconds
+       memory              2230.25k
+       OS Memory           34988.00k
+       Timestamp           07/01/2021 02:57:19 AM
+       Step Count                        566  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     338
+       Page Swaps                        0
+       Voluntary Context Switches        16
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           288
+       
+ 
+ 98         
+ 99         proc print data=pg1.np_species;
+ 100        var Species_ID Category Scientific_Name Common_Names;
+ 101        where Species_ID like "&ParkCode%" and Category="&SpeciesCat";
+ 102        run;
+ 
+ NOTE: There were 16 observations read from the data set PG1.NP_SPECIES.
+       WHERE Species_ID like 'YOSE%' and (Category='Mammal');
+ NOTE: PROCEDURE PRINT used (Total process time):
+       real time           0.03 seconds
+       user cpu time       0.03 seconds
+       system cpu time     0.01 seconds
+       memory              2380.03k
+       OS Memory           35244.00k
+       Timestamp           07/01/2021 02:57:19 AM
+       Step Count                        567  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     299
+       Page Swaps                        0
+       Voluntary Context Switches        1
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           8
+       
+ 
+ 103        
+ 104        /*Question 5: Macros Zion and Bird*/
+ 105        %let ParkCode=ZION;
+ 106        %let SpeciesCat=Bird;
+ 107        
+ 108        proc freq data=pg1.np_species;
+ 109        tables Abundance Conservation_Status;
+ 110        where Species_ID like "&ParkCode%" and
+ 111        Category="&SpeciesCat";
+ 112        run;
+ 
+ NOTE: There were 46 observations read from the data set PG1.NP_SPECIES.
+       WHERE Species_ID like 'ZION%' and (Category='Bird');
+ NOTE: PROCEDURE FREQ used (Total process time):
+       real time           0.03 seconds
+       user cpu time       0.03 seconds
+       system cpu time     0.00 seconds
+       memory              2088.90k
+       OS Memory           35244.00k
+       Timestamp           07/01/2021 02:57:19 AM
+       Step Count                        568  Switch Count  3
+       Page Faults                       0
+       Page Reclaims                     317
+       Page Swaps                        0
+       Voluntary Context Switches        18
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           288
+       
+ 
+ 113        
+ 114        proc print data=pg1.np_species;
+ 115        var Species_ID Category Scientific_Name Common_Names;
+ 116        where Species_ID like "&ParkCode%" and
+ 117        Category="&SpeciesCat";
+ 118        run;
+ 
+ NOTE: There were 46 observations read from the data set PG1.NP_SPECIES.
+       WHERE Species_ID like 'ZION%' and (Category='Bird');
+ NOTE: PROCEDURE PRINT used (Total process time):
+       real time           0.07 seconds
+       user cpu time       0.08 seconds
+       system cpu time     0.00 seconds
+       memory              2689.40k
+       OS Memory           35500.00k
+       Timestamp           07/01/2021 02:57:19 AM
+       Step Count                        569  Switch Count  1
+       Page Faults                       0
+       Page Reclaims                     394
+       Page Swaps                        0
+       Voluntary Context Switches        6
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           40
+       
+ 
+ 119        
+ 120        /*Question 6:
+ 121        There were 46 observations read from the data set PG1.NP_SPECIES.
+ 122            WHERE Species_ID like 'ZION%' and (Category='Bird');*/
+ 123        
+ 124        OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 136        

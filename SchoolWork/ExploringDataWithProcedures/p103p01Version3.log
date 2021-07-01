@@ -1,0 +1,27 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         proc univariate data=pg1.np_summary;
+ 74         var DayVisits TentCampers RVCampers;
+ 75         run;
+ 
+ NOTE: PROCEDURE UNIVARIATE used (Total process time):
+       real time           0.19 seconds
+       user cpu time       0.20 seconds
+       system cpu time     0.00 seconds
+       memory              2985.03k
+       OS Memory           32424.00k
+       Timestamp           06/30/2021 10:05:01 PM
+       Step Count                        56  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     531
+       Page Swaps                        0
+       Voluntary Context Switches        6
+       Involuntary Context Switches      1
+       Block Input Operations            0
+       Block Output Operations           64
+       
+ 
+ 76         
+ 77         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 89         

@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html class="ods_73526494-ad92-4b09-86c6-8b96f7569aec" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>Results: WORK.NP_SORT</title>
+<style>
+/*<![CDATA[*/
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.c section > table, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.c section > pre, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.c div > table,
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.c div > pre, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.c article > table, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.c article > pre,
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.j section > table, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.j section > pre, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.j div > table,
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.j div > pre, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.j article > table, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.j article > pre,
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.c p.note, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.c p.warning, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.c p.error, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.c p.fatal,
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.j p.note, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.j p.warning, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.j p.error, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.j p.fatal,
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.c > table.layoutcontainer, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.l table, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.l pre, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.l p.note,
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.l p.warning, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.l p.error, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.l p.fatal { margin-left: 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.c table, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.c pre, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.c p.note,
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.c p.warning, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.c p.error, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.r table, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.r pre, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.r p.note,
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.r table, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.r pre, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.r p.note,
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.r p.warning, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.r p.error, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion.r p.fatal { margin-right: 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec article, .ods_73526494-ad92-4b09-86c6-8b96f7569aec aside, .ods_73526494-ad92-4b09-86c6-8b96f7569aec details, .ods_73526494-ad92-4b09-86c6-8b96f7569aec figcaption, .ods_73526494-ad92-4b09-86c6-8b96f7569aec figure, .ods_73526494-ad92-4b09-86c6-8b96f7569aec footer, .ods_73526494-ad92-4b09-86c6-8b96f7569aec header, .ods_73526494-ad92-4b09-86c6-8b96f7569aec hgroup, .ods_73526494-ad92-4b09-86c6-8b96f7569aec nav, .ods_73526494-ad92-4b09-86c6-8b96f7569aec section { display: block }
+html.ods_73526494-ad92-4b09-86c6-8b96f7569aec { font-size: 100% }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec ul, .ods_73526494-ad92-4b09-86c6-8b96f7569aec ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec dd { margin: 0 0 0 40px }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec nav ul, .ods_73526494-ad92-4b09-86c6-8b96f7569aec nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec img { border: 0; vertical-align: middle }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec svg:not(:root) { overflow: hidden }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec figure { margin: 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec table { border-collapse: collapse; border-spacing: 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec p { margin-top: 0; text-align: left }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec h1.heading1 { text-align: left }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec h2.heading2 { text-align: left }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec h3.heading3 { text-align: left }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec h4.heading4 { text-align: left }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec h5.heading5 { text-align: left }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec h6.heading6 { text-align: left }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec span { text-align: left }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec table { margin-bottom: 1em }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec td, .ods_73526494-ad92-4b09-86c6-8b96f7569aec th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec td[class$="fixed"], .ods_73526494-ad92-4b09-86c6-8b96f7569aec th[class$="fixed"] { white-space: pre }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec section, .ods_73526494-ad92-4b09-86c6-8b96f7569aec article { padding-top: 1px; padding-bottom: 8px }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .stacked-value { text-align: left; display: block }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .stacked-cell > .stacked-value, .ods_73526494-ad92-4b09-86c6-8b96f7569aec td.data > td.data, .ods_73526494-ad92-4b09-86c6-8b96f7569aec th.data > td.data, .ods_73526494-ad92-4b09-86c6-8b96f7569aec th.data > th.data, .ods_73526494-ad92-4b09-86c6-8b96f7569aec td.data > th.data, .ods_73526494-ad92-4b09-86c6-8b96f7569aec th.header > th.header { border: 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .stacked-cell > div.data { border-width: 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .systitleandfootercontainer > p { margin: 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .batch { display: table }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .toc { display: none }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .proc_note_group, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .proc_title_group { margin-bottom: 1em }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec p.proctitle { margin: 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec p.note, .ods_73526494-ad92-4b09-86c6-8b96f7569aec p.warning, .ods_73526494-ad92-4b09-86c6-8b96f7569aec p.error, .ods_73526494-ad92-4b09-86c6-8b96f7569aec p.fatal { display: table }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .notebanner, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .warnbanner, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .errorbanner, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .fatalbanner,
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .notecontent, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .warncontent, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .errorcontent, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .notebanner, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .warnbanner, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .errorbanner, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .fatalbanner { padding-right: 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .body > div > ol li { text-align: left }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .c { text-align: center }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .r { text-align: right }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .l { text-align: left }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .j { text-align: justify }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .d { text-align: right }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .b { vertical-align: bottom }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .m { vertical-align: middle }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .t { vertical-align: top }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec a:active { color: #800080 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .batch > tbody, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .batch > thead, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .batch { border: hidden; }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .bycontentfolder {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .bylinecontainer > col, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .bylinecontainer > colgroup > col, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .bylinecontainer > colgroup, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .bylinecontainer > tr, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .bylinecontainer > * > tr, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .bylinecontainer > thead, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .bylinecontainer > tbody, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .bylinecontainer > tfoot { border: none; }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .cell, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .contentfolder, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .contentitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .contentproclabel, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .data, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .folderaction {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .graph > tbody, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .graph > thead, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .graph { border: hidden; }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .heading1, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .heading2, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .heading3, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .heading4, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .heading5, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .heading6 { font-family: Arial, Helvetica, sans-serif }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .indexaction, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .indexitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutcontainer, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec a:link { color: #0000ff }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .list3, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .list4, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .list5, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .list6, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .list7, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .list8, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .listitem3, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .listitem4, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .listitem5, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .listitem6, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .listitem7, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .listitem8, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .output > tbody, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .output > thead, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .output { border: hidden; }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .pagesitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .pagesproclabel, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .parskip > col, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .parskip > colgroup > col, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .parskip > colgroup, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .parskip > tr, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .parskip > * > tr, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .parskip > thead, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .parskip > tbody, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .parskip > tfoot { border: none; }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemfooter, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemfooter10, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemfooter2, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemfooter3, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemfooter4, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemfooter5, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemfooter6, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemfooter7, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemfooter8, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemtitle, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemtitle10, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemtitle2, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemtitle3, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemtitle4, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemtitle5, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemtitle6, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemtitle7, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemtitle8, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .systitleandfootercontainer > col, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systitleandfootercontainer > colgroup > col, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systitleandfootercontainer > colgroup, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systitleandfootercontainer > tr, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systitleandfootercontainer > * > tr, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systitleandfootercontainer > thead, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systitleandfootercontainer > tbody, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .systitleandfootercontainer > tfoot { border: none; }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .table > col, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .table > tr, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .table { border: hidden; }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .titleandnotecontainer > col, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .titleandnotecontainer > colgroup > col, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .titleandnotecontainer > colgroup, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .titleandnotecontainer > tr, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .titleandnotecontainer > * > tr, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .titleandnotecontainer > thead, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .titleandnotecontainer > tbody, .ods_73526494-ad92-4b09-86c6-8b96f7569aec .titleandnotecontainer > tfoot { border: none; }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec a:visited { color: #800080 }
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_73526494-ad92-4b09-86c6-8b96f7569aec .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_73526494-ad92-4b09-86c6-8b96f7569aec" class="c body">
+<h1 class="body toc">Results: WORK.NP_SORT</h1>
+<section data-name="Print" data-sec-type="proc">
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article id="IDX" aria-label="Data Set WORK.NP_SORT">
+<h1 class="contentitem toc">Data Set WORK.NP_SORT</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.NP_SORT">
+<caption aria-label="Data Set WORK.NP_SORT"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="header" scope="col">Reg</th>
+<th class="header" scope="col">Type</th>
+<th class="header" scope="col">ParkName</th>
+<th class="r header" scope="col">DayVisits</th>
+<th class="r header" scope="col">OtherLodging</th>
+<th class="r header" scope="col">OtherCamping</th>
+<th class="r header" scope="col">TentCampers</th>
+<th class="r header" scope="col">RVCampers</th>
+<th class="r header" scope="col">BackcountryCampers</th>
+<th class="r header" scope="col">Acres</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">A</td>
+<td class="data">NP</td>
+<td class="data">Kenai Fjords National Park</td>
+<td class="r data">346,534</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1,514</td>
+<td class="r data">0</td>
+<td class="r data">648</td>
+<td class="r data">669,650.05</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">A</td>
+<td class="data">NP</td>
+<td class="data">Kobuk Valley National Park</td>
+<td class="r data">15,500</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">7,050</td>
+<td class="r data">1,750,716.16</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Grand Canyon National Park</td>
+<td class="r data">5,969,811</td>
+<td class="r data">600,307</td>
+<td class="r data">24,257</td>
+<td class="r data">206,626</td>
+<td class="r data">88,600</td>
+<td class="r data">330,703</td>
+<td class="r data">1,201,647.03</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Rocky Mountain National Park</td>
+<td class="r data">4,517,585</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">120,981</td>
+<td class="r data">57,321</td>
+<td class="r data">45,223</td>
+<td class="r data">265,795.20</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Zion National Park</td>
+<td class="r data">4,295,127</td>
+<td class="r data">86,456</td>
+<td class="r data">0</td>
+<td class="r data">137,442</td>
+<td class="r data">70,728</td>
+<td class="r data">28,248</td>
+<td class="r data">147,237.02</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Yellowstone National Park</td>
+<td class="r data">4,257,177</td>
+<td class="r data">579,227</td>
+<td class="r data">583,068</td>
+<td class="r data">101,639</td>
+<td class="r data">68,991</td>
+<td class="r data">44,663</td>
+<td class="r data">2,219,790.71</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Grand Teton National Park</td>
+<td class="r data">3,270,076</td>
+<td class="r data">196,577</td>
+<td class="r data">297,084</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">36,206</td>
+<td class="r data">310,043.96</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Glacier National Park</td>
+<td class="r data">2,946,681</td>
+<td class="r data">99,550</td>
+<td class="r data">0</td>
+<td class="r data">136,599</td>
+<td class="r data">126,933</td>
+<td class="r data">38,421</td>
+<td class="r data">1,013,128.94</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Bryce Canyon National Park</td>
+<td class="r data">2,365,110</td>
+<td class="r data">56,844</td>
+<td class="r data">0</td>
+<td class="r data">38,192</td>
+<td class="r data">62,768</td>
+<td class="r data">2,684</td>
+<td class="r data">35,835.08</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Arches National Park</td>
+<td class="r data">1,585,718</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">28,046</td>
+<td class="r data">18,658</td>
+<td class="r data">1,174</td>
+<td class="r data">76,678.98</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Capitol Reef National Park</td>
+<td class="r data">1,064,904</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">19,507</td>
+<td class="r data">20,917</td>
+<td class="r data">2,996</td>
+<td class="r data">241,904.26</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Saguaro National Park</td>
+<td class="r data">820,426</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1,868</td>
+<td class="r data">91,715.72</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Canyonlands National Park</td>
+<td class="r data">776,218</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">13,513</td>
+<td class="r data">8,288</td>
+<td class="r data">86,227</td>
+<td class="r data">337,597.83</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Petrified Forest National Park</td>
+<td class="r data">643,274</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">486</td>
+<td class="r data">221,415.77</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Mesa Verde National Park</td>
+<td class="r data">583,527</td>
+<td class="r data">26,800</td>
+<td class="r data">0</td>
+<td class="r data">44,925</td>
+<td class="r data">12,073</td>
+<td class="r data">0</td>
+<td class="r data">52,485.17</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Carlsbad Caverns National Park</td>
+<td class="r data">466,773</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">251</td>
+<td class="r data">46,766.45</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Big Bend National Park</td>
+<td class="r data">388,290</td>
+<td class="r data">48,280</td>
+<td class="r data">11,654</td>
+<td class="r data">64,593</td>
+<td class="r data">27,385</td>
+<td class="r data">41,793</td>
+<td class="r data">801,163.21</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Black Canyon of the Gunnison National Park</td>
+<td class="r data">238,018</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">19,070</td>
+<td class="r data">11,878</td>
+<td class="r data">1,936</td>
+<td class="r data">30,749.75</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Pinnacles National Park</td>
+<td class="r data">215,555</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">26,685.73</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="data">IM</td>
+<td class="data">NP</td>
+<td class="data">Guadalupe Mountains National Park</td>
+<td class="r data">181,839</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">10,654</td>
+<td class="r data">6,254</td>
+<td class="r data">2,954</td>
+<td class="r data">86,367.10</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="data">MW</td>
+<td class="data">NP</td>
+<td class="data">Cuyahoga Valley National Park</td>
+<td class="r data">2,423,390</td>
+<td class="r data">7,797</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">32,572.35</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="data">MW</td>
+<td class="data">NP</td>
+<td class="data">Hot Springs National Park</td>
+<td class="r data">1,544,300</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">3,706</td>
+<td class="r data">20,315</td>
+<td class="r data">0</td>
+<td class="r data">5,549.10</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="data">MW</td>
+<td class="data">NP</td>
+<td class="data">Badlands National Park</td>
+<td class="r data">996,263</td>
+<td class="r data">9,875</td>
+<td class="r data">47,131</td>
+<td class="r data">7,934</td>
+<td class="r data">1,500</td>
+<td class="r data">1,410</td>
+<td class="r data">242,755.94</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="data">MW</td>
+<td class="data">NP</td>
+<td class="data">Theodore Roosevelt National Park</td>
+<td class="r data">753,880</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">14,835</td>
+<td class="r data">17,730</td>
+<td class="r data">232</td>
+<td class="r data">70,446.89</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="data">MW</td>
+<td class="data">NP</td>
+<td class="data">Wind Cave National Park</td>
+<td class="r data">617,377</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">4,093</td>
+<td class="r data">4,401</td>
+<td class="r data">493</td>
+<td class="r data">33,970.84</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="data">MW</td>
+<td class="data">NP</td>
+<td class="data">Voyageurs National Park</td>
+<td class="r data">241,912</td>
+<td class="r data">3,983</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">46,451</td>
+<td class="r data">218,200.15</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="data">MW</td>
+<td class="data">NP</td>
+<td class="data">Isle Royale National Park</td>
+<td class="r data">24,966</td>
+<td class="r data">10,128</td>
+<td class="r data">171</td>
+<td class="r data">3,160</td>
+<td class="r data">0</td>
+<td class="r data">22,604</td>
+<td class="r data">571,790.11</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="data">NE</td>
+<td class="data">NP</td>
+<td class="data">Acadia National Park</td>
+<td class="r data">3,303,393</td>
+<td class="r data">0</td>
+<td class="r data">977</td>
+<td class="r data">152,811</td>
+<td class="r data">46,629</td>
+<td class="r data">1,324</td>
+<td class="r data">49,057.36</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="data">NE</td>
+<td class="data">NP</td>
+<td class="data">Shenandoah National Park</td>
+<td class="r data">1,437,341</td>
+<td class="r data">101,538</td>
+<td class="r data">0</td>
+<td class="r data">129,594</td>
+<td class="r data">51,255</td>
+<td class="r data">48,825</td>
+<td class="r data">199,195.27</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Yosemite National Park</td>
+<td class="r data">5,028,868</td>
+<td class="r data">743,546</td>
+<td class="r data">0</td>
+<td class="r data">490,431</td>
+<td class="r data">376,744</td>
+<td class="r data">216,989</td>
+<td class="r data">761,747.50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Olympic National Park</td>
+<td class="r data">3,390,221</td>
+<td class="r data">85,450</td>
+<td class="r data">11,180</td>
+<td class="r data">134,871</td>
+<td class="r data">64,582</td>
+<td class="r data">100,347</td>
+<td class="r data">922,650.10</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Joshua Tree National Park</td>
+<td class="r data">2,505,286</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">232,964</td>
+<td class="r data">65,409</td>
+<td class="r data">21,195</td>
+<td class="r data">790,635.74</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Hawaii Volcanoes National Park</td>
+<td class="r data">1,887,580</td>
+<td class="r data">30,606</td>
+<td class="r data">4,427</td>
+<td class="r data">1,697</td>
+<td class="r data">0</td>
+<td class="r data">5,178</td>
+<td class="r data">323,431.38</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Mount Rainier National Park</td>
+<td class="r data">1,356,913</td>
+<td class="r data">42,223</td>
+<td class="r data">0</td>
+<td class="r data">64,265</td>
+<td class="r data">28,981</td>
+<td class="r data">57,636</td>
+<td class="r data">236,381.64</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Death Valley National Park</td>
+<td class="r data">1,296,283</td>
+<td class="r data">24,668</td>
+<td class="r data">13,653</td>
+<td class="r data">97,443</td>
+<td class="r data">106,399</td>
+<td class="r data">0</td>
+<td class="r data">3,373,063.14</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Haleakala National Park</td>
+<td class="r data">1,263,558</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">8,332</td>
+<td class="r data">0</td>
+<td class="r data">2,392</td>
+<td class="r data">33,264.62</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Sequoia National Park</td>
+<td class="r data">1,254,688</td>
+<td class="r data">63,940</td>
+<td class="r data">0</td>
+<td class="r data">149,714</td>
+<td class="r data">69,732</td>
+<td class="r data">36,247</td>
+<td class="r data">404,062.63</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Crater Lake National Park</td>
+<td class="r data">756,344</td>
+<td class="r data">35,871</td>
+<td class="r data">50,761</td>
+<td class="r data">6,280</td>
+<td class="r data">0</td>
+<td class="r data">4,706</td>
+<td class="r data">183,224.05</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Kings Canyon National Park</td>
+<td class="r data">607,479</td>
+<td class="r data">50,079</td>
+<td class="r data">0</td>
+<td class="r data">110,490</td>
+<td class="r data">32,686</td>
+<td class="r data">12,046</td>
+<td class="r data">461,901.20</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Redwood National Park</td>
+<td class="r data">536,297</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">4,979</td>
+<td class="r data">0</td>
+<td class="r data">4,681</td>
+<td class="r data">138,999.97</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Lassen Volcanic National Park</td>
+<td class="r data">536,068</td>
+<td class="r data">6,182</td>
+<td class="r data">0</td>
+<td class="r data">59,742</td>
+<td class="r data">27,633</td>
+<td class="r data">9,057</td>
+<td class="r data">106,589.02</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Channel Islands National Park</td>
+<td class="r data">364,807</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">22,885</td>
+<td class="r data">249,561.00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">Great Basin National Park</td>
+<td class="r data">144,846</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">26,743</td>
+<td class="r data">14,748</td>
+<td class="r data">1,067</td>
+<td class="r data">77,180.00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="data">PW</td>
+<td class="data">NP</td>
+<td class="data">North Cascades National Park</td>
+<td class="r data">28,646</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">25,516</td>
+<td class="r data">504,780.94</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="data">SE</td>
+<td class="data">NP</td>
+<td class="data">Great Smoky Mountains National Park</td>
+<td class="r data">11,312,786</td>
+<td class="r data">11,493</td>
+<td class="r data">0</td>
+<td class="r data">190,574</td>
+<td class="r data">111,680</td>
+<td class="r data">109,349</td>
+<td class="r data">522,426.88</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="data">SE</td>
+<td class="data">NP</td>
+<td class="data">Everglades National Park</td>
+<td class="r data">930,907</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">8,410</td>
+<td class="r data">10,799</td>
+<td class="r data">12,726</td>
+<td class="r data">1,400,539.30</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="data">SE</td>
+<td class="data">NP</td>
+<td class="data">Mammoth Cave National Park</td>
+<td class="r data">586,514</td>
+<td class="r data">16,365</td>
+<td class="r data">0</td>
+<td class="r data">39,636</td>
+<td class="r data">16,248</td>
+<td class="r data">5,088</td>
+<td class="r data">52,830.19</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="data">SE</td>
+<td class="data">NP</td>
+<td class="data">Biscayne National Park</td>
+<td class="r data">514,709</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">2,522</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">172,971.11</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="data">SE</td>
+<td class="data">NP</td>
+<td class="data">Virgin Islands National Park</td>
+<td class="r data">411,343</td>
+<td class="r data">14,214</td>
+<td class="r data">15,842</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">14,948.46</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="data">SE</td>
+<td class="data">NP</td>
+<td class="data">Congaree National Park</td>
+<td class="r data">143,843</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">286</td>
+<td class="r data">26,275.82</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="data">SE</td>
+<td class="data">NP</td>
+<td class="data">Dry Tortugas National Park</td>
+<td class="r data">73,661</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">5,934</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">64,701.22</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         proc import datafile="/home/u58811620/CISP357/data/storm_damage.tab"
+ 74         dbms=tab
+ 75         out=storm_damage_tab;
+ 76         run;
+ 
+ NOTE: Import cancelled.  Output dataset WORK.STORM_DAMAGE_TAB already exists.  Specify REPLACE option to overwrite it.
+ NOTE: The SAS System stopped processing this step because of errors.
+ NOTE: PROCEDURE IMPORT used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.00 seconds
+       system cpu time     0.00 seconds
+       memory              198.18k
+       OS Memory           39496.00k
+       Timestamp           06/24/2021 01:34:14 AM
+       Step Count                        148  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     14
+       Page Swaps                        0
+       Voluntary Context Switches        0
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           0
+       
+ 77         
+ 78         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 90         

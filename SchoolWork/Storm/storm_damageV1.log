@@ -1,0 +1,92 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         proc import datafile="/home/u58811620/CISP357/data/storm_damage.tab"
+ 74         dbms=tab
+ 75         out=storm_damage_tab;
+ 76         run;
+ 
+ NOTE: Unable to open parameter catalog: SASUSER.PARMS.PARMS.SLIST in update mode. Temporary parameter values will be saved to 
+ WORK.PARMS.PARMS.SLIST.
+ 77          /**********************************************************************
+ 78          *   PRODUCT:   SAS
+ 79          *   VERSION:   9.4
+ 80          *   CREATOR:   External File Interface
+ 81          *   DATE:      24JUN21
+ 82          *   DESC:      Generated SAS Datastep Code
+ 83          *   TEMPLATE SOURCE:  (None Specified.)
+ 84          ***********************************************************************/
+ 85             data WORK.STORM_DAMAGE_TAB    ;
+ 86             %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+ 87             infile '/home/u58811620/CISP357/data/storm_damage.tab' delimiter='09'x MISSOVER DSD lrecl=32767 firstobs=2 ;
+ 88                informat Event $22. ;
+ 89                informat Date DATE9. ;
+ 90                informat Summary $762. ;
+ 91                informat Cost best32. ;
+ 92                format Event $22. ;
+ 93                format Date DATE9. ;
+ 94                format Summary $762. ;
+ 95                format Cost best12. ;
+ 96             input
+ 97                         Event  $
+ 98                         Date
+ 99                         Summary  $
+ 100                        Cost
+ 101            ;
+ 102            if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+ 103            run;
+ 
+ NOTE: The infile '/home/u58811620/CISP357/data/storm_damage.tab' is:
+       Filename=/home/u58811620/CISP357/data/storm_damage.tab,
+       Owner Name=u58811620,Group Name=oda,
+       Access Permission=-rw-r--r--,
+       Last Modified=16Jun2021:23:14:26,
+       File Size (bytes)=12267
+ 
+ NOTE: 38 records were read from the infile '/home/u58811620/CISP357/data/storm_damage.tab'.
+       The minimum record length was 148.
+       The maximum record length was 800.
+ NOTE: The data set WORK.STORM_DAMAGE_TAB has 38 observations and 4 variables.
+ NOTE: DATA statement used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.01 seconds
+       system cpu time     0.00 seconds
+       memory              9455.50k
+       OS Memory           45504.00k
+       Timestamp           06/24/2021 01:28:07 AM
+       Step Count                        130  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     178
+       Page Swaps                        0
+       Voluntary Context Switches        11
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           264
+       
+ 
+ 38 rows created in WORK.STORM_DAMAGE_TAB from /home/u58811620/CISP357/data/storm_damage.tab.
+   
+   
+   
+ NOTE: WORK.STORM_DAMAGE_TAB data set was successfully created.
+ NOTE: The data set WORK.STORM_DAMAGE_TAB has 38 observations and 4 variables.
+ NOTE: PROCEDURE IMPORT used (Total process time):
+       real time           0.11 seconds
+       user cpu time       0.06 seconds
+       system cpu time     0.01 seconds
+       memory              9455.50k
+       OS Memory           45764.00k
+       Timestamp           06/24/2021 01:28:07 AM
+       Step Count                        130  Switch Count  8
+       Page Faults                       0
+       Page Reclaims                     3083
+       Page Swaps                        0
+       Voluntary Context Switches        77
+       Involuntary Context Switches      1
+       Block Input Operations            24
+       Block Output Operations           328
+       
+ 
+ 104        
+ 105        OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 117        

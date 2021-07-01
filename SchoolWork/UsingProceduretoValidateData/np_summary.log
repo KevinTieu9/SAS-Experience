@@ -1,0 +1,94 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 74         
+ 75         
+ 76         *Question 1-3:
+ 77         There isn’t an invalid value that exists for Reg
+ 78         
+ 79         Based off the valid types in the table NPRE, PRESERVE, and RIVERWAYS are all invalid values for Types.*;
+ 80         
+ 81         proc freq data = pg1.np_summary;
+ 82         tables Reg Type;
+ 83         run;
+ 
+ NOTE: There were 135 observations read from the data set PG1.NP_SUMMARY.
+ NOTE: PROCEDURE FREQ used (Total process time):
+       real time           0.05 seconds
+       user cpu time       0.05 seconds
+       system cpu time     0.00 seconds
+       memory              2774.87k
+       OS Memory           32428.00k
+       Timestamp           06/30/2021 11:08:06 PM
+       Step Count                        125  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     452
+       Page Swaps                        0
+       Voluntary Context Switches        16
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           272
+       
+ 
+ 84         
+ 85         *Question 4-5:
+ 86         Smallest Observation Peak: 78
+ 87         
+ 88         Largest Observation Peak: 6 *;
+ 89         
+ 90         proc univariate data=pg1.np_summary;
+ 91         var Acres;
+ 92         run;
+ 
+ NOTE: PROCEDURE UNIVARIATE used (Total process time):
+       real time           0.06 seconds
+       user cpu time       0.06 seconds
+       system cpu time     0.00 seconds
+       memory              992.15k
+       OS Memory           32680.00k
+       Timestamp           06/30/2021 11:08:06 PM
+       Step Count                        126  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     133
+       Page Swaps                        0
+       Voluntary Context Switches        1
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           24
+       
+ 
+ 93         
+ 94         
+ 95         *Question 6:
+ 96         Largest: Noatak National Preserve: 6,587,071.39 Acres
+ 97         
+ 98         Smallest: African Burial Ground National Monument : 0.35 *;
+ 99         proc sort data=pg1.np_summary;
+ 100        by descending Acres ;
+ 101        run;
+ 
+ NOTE: Input data set is already sorted, no sorting done.
+ NOTE: PROCEDURE SORT used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.00 seconds
+       system cpu time     0.00 seconds
+       memory              547.12k
+       OS Memory           32936.00k
+       Timestamp           06/30/2021 11:08:06 PM
+       Step Count                        127  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     51
+       Page Swaps                        0
+       Voluntary Context Switches        1
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           0
+       
+ 
+ 102        
+ 103        OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 115        

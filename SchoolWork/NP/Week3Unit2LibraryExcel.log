@@ -1,0 +1,35 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         LIBNAME NP xlsx "/home/u58811620/CISP357/data/np_info.xlsx";
+ NOTE: Libref NP was successfully assigned as follows: 
+       Engine:        XLSX 
+       Physical Name: /home/u58811620/CISP357/data/np_info.xlsx
+ 74         options validvarname=v7;
+ 75         proc contents data=NP.parks;
+ NOTE:    Variable Name Change.  Park Code -> Park_Code                       
+ NOTE:    Variable Name Change.  Park Name -> Park_Name                       
+ 76         run;
+ 
+ NOTE: PROCEDURE CONTENTS used (Total process time):
+       real time           0.54 seconds
+       user cpu time       0.50 seconds
+       system cpu time     0.03 seconds
+       memory              42767.93k
+       OS Memory           82312.00k
+       Timestamp           06/24/2021 01:08:43 AM
+       Step Count                        76  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     10700
+       Page Swaps                        0
+       Voluntary Context Switches        9
+       Involuntary Context Switches      1
+       Block Input Operations            0
+       Block Output Operations           16
+       
+ 
+ 77         libname np clear;
+ NOTE: Libref NP has been deassigned.
+ 78         
+ 79         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 91         

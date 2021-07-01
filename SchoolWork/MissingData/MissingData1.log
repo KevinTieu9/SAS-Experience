@@ -1,0 +1,34 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 74         
+ 75         proc print data=pg1.eu_occ;
+ 76         where Hotel is missing and ShortStay is missing and Camp is missing;
+ 77         run;
+ 
+ NOTE: There were 101 observations read from the data set PG1.EU_OCC.
+       WHERE (Hotel is null) and (ShortStay is null) and (Camp is null);
+ NOTE: PROCEDURE PRINT used (Total process time):
+       real time           0.20 seconds
+       user cpu time       0.20 seconds
+       system cpu time     0.01 seconds
+       memory              4348.81k
+       OS Memory           34604.00k
+       Timestamp           07/01/2021 12:52:28 AM
+       Step Count                        343  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     415
+       Page Swaps                        0
+       Voluntary Context Switches        12
+       Involuntary Context Switches      2
+       Block Input Operations            0
+       Block Output Operations           80
+       
+ 
+ 78         
+ 79         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 91         

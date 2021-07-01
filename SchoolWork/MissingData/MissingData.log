@@ -1,0 +1,66 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 74         
+ 75         /*Question 1-2:
+ 76         There were 101 observations read from the data set PG1.EU_OCC.
+ 77                WHERE (Hotel is null) and (ShortStay is null) and (Camp is null);*/
+ 78         proc print data=pg1.eu_occ;
+ 79         where Hotel is missing and ShortStay is missing and Camp is missing;
+ 80         run;
+ 
+ NOTE: There were 101 observations read from the data set PG1.EU_OCC.
+       WHERE (Hotel is null) and (ShortStay is null) and (Camp is null);
+ NOTE: PROCEDURE PRINT used (Total process time):
+       real time           0.20 seconds
+       user cpu time       0.21 seconds
+       system cpu time     0.00 seconds
+       memory              4377.12k
+       OS Memory           34604.00k
+       Timestamp           07/01/2021 01:01:48 AM
+       Step Count                        362  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     642
+       Page Swaps                        0
+       Voluntary Context Switches        12
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           80
+       
+ 
+ 81         
+ 82         /*Question 3-4:
+ 83         There were 25 observations read from the data set PG1.EU_OCC.
+ 84                WHERE Hotel>40000000;
+ 85         
+ 86             July and August is listed in the report, so 2 months.*/
+ 87         proc print data=pg1.eu_occ;
+ 88         where Hotel > 40000000;
+ 89         run;
+ 
+ NOTE: There were 25 observations read from the data set PG1.EU_OCC.
+       WHERE Hotel>40000000;
+ NOTE: PROCEDURE PRINT used (Total process time):
+       real time           0.05 seconds
+       user cpu time       0.05 seconds
+       system cpu time     0.00 seconds
+       memory              1266.34k
+       OS Memory           34860.00k
+       Timestamp           07/01/2021 01:01:48 AM
+       Step Count                        363  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     160
+       Page Swaps                        0
+       Voluntary Context Switches        1
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           16
+       
+ 
+ 90         
+ 91         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 103        

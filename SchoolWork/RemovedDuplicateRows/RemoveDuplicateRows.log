@@ -1,0 +1,37 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 74         
+ 75         proc sort data=pg1.np_largeparks out=park_clean
+ 76                   dupout=park_dups nodupkey;
+ 77             by _all_;
+ 78         run;
+ 
+ NOTE: There were 153 observations read from the data set PG1.NP_LARGEPARKS.
+ NOTE: 30 observations with duplicate key values were deleted.
+ NOTE: The data set WORK.PARK_CLEAN has 123 observations and 5 variables.
+ NOTE: The data set WORK.PARK_DUPS has 30 observations and 5 variables.
+ NOTE: PROCEDURE SORT used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.00 seconds
+       system cpu time     0.00 seconds
+       memory              1507.75k
+       OS Memory           30644.00k
+       Timestamp           07/01/2021 04:05:47 AM
+       Step Count                        30  Switch Count  4
+       Page Faults                       0
+       Page Reclaims                     359
+       Page Swaps                        0
+       Voluntary Context Switches        26
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           536
+       
+ 
+ 79         
+ 80         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 92         

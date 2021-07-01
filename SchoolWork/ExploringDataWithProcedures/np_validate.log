@@ -1,0 +1,142 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         ***********************************************************;
+ 74         *  LESSON 2, PRACTICE 1                                   *;
+ 75         *    a) Complete the PROC PRINT statement to list the     *;
+ 76         *       first 20 observations in PG1.NP_SUMMARY.          *;
+ 77         *    b) Add a VAR statement to include only the following *;
+ 78         *       variables: Reg, Type, ParkName, DayVisits,        *;
+ 79         *       TentCampers, and RVCampers. Highlight the step    *;
+ 80         *       and run the selected code.                        *;
+ 81         *       Do you observe any possible inconsistencies in    *;
+ 82         *       the data?                                         *;
+ 83         *    c) Copy the PROC PRINT step and paste it at the end  *;
+ 84         *       of the program. Change PRINT to MEANS and remove  *;
+ 85         *       the OBS= data set option. Modify the VAR          *;
+ 86         *       statement to calculate summary statistics for     *;
+ 87         *       DayVisits, TentCampers, and RVCampers. Highlight  *;
+ 88         *       the step and run the selected code.               *;
+ 89         *       What is the minimum value for tent campers? Is    *;
+ 90         *       that value unexpected?                            *;
+ 91         *    d) Copy the PROC MEANS step and paste it at the end  *;
+ 92         *       of the program. Change MEANS to UNIVARIATE.       *;
+ 93         *       Highlight the step and run the selected code.     *;
+ 94         *       Are there negative values for any of the columns? *;
+ 95         *    e) Copy the PROC UNIVARIATE step and paste it at the *;
+ 96         *       end of the program. Change UNIVARIATE to FREQ.    *;
+ 97         *       Change the VAR statement to a TABLES statement to *;
+ 98         *       produce frequency tables for Reg and Type.        *;
+ 99         *       Highlight the step and run the selected code.     *;
+ 100        *       Are there any lowercase codes? Are there any      *;
+ 101        *       codes that occur only once in the table?          *;
+ 102        *    f) Add comments before each step to document the     *;
+ 103        *       program. Save the program as np_validate.sas in   *;
+ 104        *       the output folder.                                *;
+ 105        ***********************************************************;
+ 106        libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 107        
+ 108        *Results 1, A and B*;
+ 109        
+ 110        proc print data=pg1.np_summary(obs=20);
+ 111        var Reg Type ParkName DayVisits TentCampers RVCampers;
+ 112        run;
+ 
+ NOTE: There were 20 observations read from the data set PG1.NP_SUMMARY.
+ NOTE: PROCEDURE PRINT used (Total process time):
+       real time           0.05 seconds
+       user cpu time       0.05 seconds
+       system cpu time     0.00 seconds
+       memory              2391.62k
+       OS Memory           31912.00k
+       Timestamp           06/30/2021 10:21:24 PM
+       Step Count                        74  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     357
+       Page Swaps                        0
+       Voluntary Context Switches        4
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           8
+       
+ 
+ 113        
+ 114        *Results 2, C*;
+ 115        
+ 116        proc means data=pg1.np_summary;
+ 117        var DayVisits TentCampers RVCampers;
+ 118        run;
+ 
+ NOTE: There were 135 observations read from the data set PG1.NP_SUMMARY.
+ NOTE: PROCEDURE MEANS used (Total process time):
+       real time           0.03 seconds
+       user cpu time       0.03 seconds
+       system cpu time     0.01 seconds
+       memory              7039.56k
+       OS Memory           38588.00k
+       Timestamp           06/30/2021 10:21:24 PM
+       Step Count                        75  Switch Count  1
+       Page Faults                       0
+       Page Reclaims                     1681
+       Page Swaps                        0
+       Voluntary Context Switches        19
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           0
+       
+ 
+ 119        
+ 120        *Results 3, D*;
+ 121        
+ 122        proc univariate data=pg1.np_summary;
+ 123        var DayVisits TentCampers RVCampers;
+ 124        run;
+ 
+ NOTE: PROCEDURE UNIVARIATE used (Total process time):
+       real time           0.16 seconds
+       user cpu time       0.16 seconds
+       system cpu time     0.00 seconds
+       memory              1069.37k
+       OS Memory           33448.00k
+       Timestamp           06/30/2021 10:21:24 PM
+       Step Count                        76  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     102
+       Page Swaps                        0
+       Voluntary Context Switches        2
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           80
+       
+ 
+ 125        
+ 126        *Results 4, E*;
+ 127        
+ 128        proc freq data=pg1.np_summary;
+ 129        tables Reg Type;
+ 130        run;
+ 
+ NOTE: There were 135 observations read from the data set PG1.NP_SUMMARY.
+ NOTE: PROCEDURE FREQ used (Total process time):
+       real time           0.03 seconds
+       user cpu time       0.03 seconds
+       system cpu time     0.00 seconds
+       memory              841.93k
+       OS Memory           33708.00k
+       Timestamp           06/30/2021 10:21:24 PM
+       Step Count                        77  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     124
+       Page Swaps                        0
+       Voluntary Context Switches        12
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           280
+       
+ 
+ 131        
+ 132        OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 144        

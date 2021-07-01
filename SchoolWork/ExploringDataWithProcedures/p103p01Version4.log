@@ -1,0 +1,28 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         proc freq data=pg1.np_summary;
+ 74         tables Reg Type;
+ 75         run;
+ 
+ NOTE: There were 135 observations read from the data set PG1.NP_SUMMARY.
+ NOTE: PROCEDURE FREQ used (Total process time):
+       real time           0.05 seconds
+       user cpu time       0.05 seconds
+       system cpu time     0.00 seconds
+       memory              2756.53k
+       OS Memory           32428.00k
+       Timestamp           06/30/2021 10:09:09 PM
+       Step Count                        62  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     482
+       Page Swaps                        0
+       Voluntary Context Switches        17
+       Involuntary Context Switches      1
+       Block Input Operations            0
+       Block Output Operations           280
+       
+ 
+ 76         
+ 77         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 89         
