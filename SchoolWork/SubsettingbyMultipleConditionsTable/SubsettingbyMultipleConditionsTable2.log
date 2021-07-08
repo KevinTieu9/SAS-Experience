@@ -1,0 +1,45 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 refers to the same physical library as _TEMP0.
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 74         
+ 75         
+ 76         /*Notice that Fox Squirrels are included in the output table.
+ 77         Add a condition in the WHERE statement to exclude rows that include Squirrel.
+ 78         Submit the program and verify the results. (10 points)*/
+ 79         
+ 80         data fox;
+ 81         set pg1.np_species;
+ 82         where Category='Mammal' and upcase(Common_Names) like '%FOX%'
+ 83         and upcase(Common_Names) not like '%SQUIRREL%';
+ 84         drop Category Record_Status Occurrence Nativeness;
+ 85         run;
+ 
+ NOTE: There were 18 observations read from the data set PG1.NP_SPECIES.
+       WHERE (Category='Mammal') and UPCASE(Common_Names) like '%FOX%' and UPCASE(Common_Names) not like '%SQUIRREL%';
+ NOTE: The data set WORK.FOX has 18 observations and 7 variables.
+ NOTE: DATA statement used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.00 seconds
+       system cpu time     0.00 seconds
+       memory              2321.06k
+       OS Memory           32684.00k
+       Timestamp           07/08/2021 01:55:34 AM
+       Step Count                        94  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     388
+       Page Swaps                        0
+       Voluntary Context Switches        14
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           264
+       
+ 
+ 86         
+ 87         
+ 88         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 100        

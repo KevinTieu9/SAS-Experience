@@ -1,0 +1,61 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 refers to the same physical library as _TEMP1.
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 74         
+ 75         data Parks Monuments;
+ 76         set pg1.np_summary;
+ 77         
+ 78         /*Answer 1*/
+ 79         where Type in ('NM', 'NP');
+ 80         
+ 81         /*Answer 2*/
+ 82         Campers= sum(OtherCamping, TentCampers, RVCampers, BackcountryCampers);
+ 83         format Campers comma20.;
+ 84         
+ 85         /*Answer 3*/
+ 86         if Type='NP' then do Parktype= 'Park';
+ 87         output Parks;
+ 88         end;
+ 89         
+ 90         else if Type='NM' then do Parktype='Monument';
+ 91         output Monuments;
+ 92         end;
+ 93         /*Answer 4*/
+ 94         keep Reg ParkName DayVisits OtherLodging Campers ParkType;
+ 95         
+ 96         /*Answer 5
+ 97         51 Rows in the Park Table
+ 98         
+ 99         63 Rows in the Monuments Table
+ 100        */
+ 101        run;
+ 
+ NOTE: There were 114 observations read from the data set PG1.NP_SUMMARY.
+       WHERE Type in ('NM', 'NP');
+ NOTE: The data set WORK.PARKS has 51 observations and 6 variables.
+ NOTE: The data set WORK.MONUMENTS has 63 observations and 6 variables.
+ NOTE: DATA statement used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.00 seconds
+       system cpu time     0.00 seconds
+       memory              1358.03k
+       OS Memory           33456.00k
+       Timestamp           07/08/2021 03:08:02 AM
+       Step Count                        213  Switch Count  5
+       Page Faults                       0
+       Page Reclaims                     286
+       Page Swaps                        0
+       Voluntary Context Switches        29
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           536
+       
+ 
+ 102        
+ 103        OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 115        

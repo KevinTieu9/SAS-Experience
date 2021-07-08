@@ -1,0 +1,50 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 refers to the same physical library as _TEMP0.
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 74         
+ 75         /*Create a new program.  (10 points)
+ 76         
+ 77             Write a DATA step to read the pg1.np_species table and create a new table named fox.
+ 78             Note: try creating fox as a permanent table in the CISP357/output folder.
+ 79         
+ 80             Include only the rows where Category is Mammal and Common_Names includes Fox in any case.
+ 81         
+ 82             Exclude the Category, Record_Status, Occurrence, and Nativeness columns.
+ 83         
+ 84         Run the program.*/
+ 85         
+ 86         data fox;
+ 87         set pg1.np_species;
+ 88         where Category='Mammal' and upcase(Common_Names) like '%FOX%';
+ 89         drop Category Record_Status Occurrence Nativeness;
+ 90         run;
+ 
+ NOTE: There were 21 observations read from the data set PG1.NP_SPECIES.
+       WHERE (Category='Mammal') and UPCASE(Common_Names) like '%FOX%';
+ NOTE: The data set WORK.FOX has 21 observations and 7 variables.
+ NOTE: DATA statement used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.00 seconds
+       system cpu time     0.01 seconds
+       memory              2318.84k
+       OS Memory           32684.00k
+       Timestamp           07/08/2021 01:51:54 AM
+       Step Count                        75  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     416
+       Page Swaps                        0
+       Voluntary Context Switches        13
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           264
+       
+ 
+ 91         
+ 92         
+ 93         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 105        

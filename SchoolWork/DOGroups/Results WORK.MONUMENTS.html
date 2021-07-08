@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html class="ods_1550fac0-d48b-4357-a0ed-68c1b1163470" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>Results: WORK.MONUMENTS</title>
+<style>
+/*<![CDATA[*/
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.c section > table, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.c section > pre, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.c div > table,
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.c div > pre, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.c article > table, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.c article > pre,
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.j section > table, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.j section > pre, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.j div > table,
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.j div > pre, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.j article > table, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.j article > pre,
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.c p.note, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.c p.warning, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.c p.error, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.c p.fatal,
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.j p.note, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.j p.warning, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.j p.error, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.j p.fatal,
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.c > table.layoutcontainer, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.l table, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.l pre, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.l p.note,
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.l p.warning, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.l p.error, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.l p.fatal { margin-left: 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.c table, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.c pre, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.c p.note,
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.c p.warning, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.c p.error, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.r table, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.r pre, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.r p.note,
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.r table, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.r pre, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.r p.note,
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.r p.warning, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.r p.error, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion.r p.fatal { margin-right: 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 article, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 aside, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 details, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 figcaption, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 figure, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 footer, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 header, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 hgroup, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 nav, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 section { display: block }
+html.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 { font-size: 100% }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 ul, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 dd { margin: 0 0 0 40px }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 nav ul, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 img { border: 0; vertical-align: middle }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 svg:not(:root) { overflow: hidden }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 figure { margin: 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 table { border-collapse: collapse; border-spacing: 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 p { margin-top: 0; text-align: left }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 h1.heading1 { text-align: left }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 h2.heading2 { text-align: left }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 h3.heading3 { text-align: left }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 h4.heading4 { text-align: left }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 h5.heading5 { text-align: left }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 h6.heading6 { text-align: left }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 span { text-align: left }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 table { margin-bottom: 1em }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 td, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 td[class$="fixed"], .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 th[class$="fixed"] { white-space: pre }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 section, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 article { padding-top: 1px; padding-bottom: 8px }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .stacked-value { text-align: left; display: block }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .stacked-cell > .stacked-value, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 td.data > td.data, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 th.data > td.data, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 th.data > th.data, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 td.data > th.data, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 th.header > th.header { border: 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .stacked-cell > div.data { border-width: 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systitleandfootercontainer > p { margin: 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .batch { display: table }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .toc { display: none }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .proc_note_group, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .proc_title_group { margin-bottom: 1em }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 p.proctitle { margin: 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 p.note, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 p.warning, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 p.error, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 p.fatal { display: table }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .notebanner, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .warnbanner, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .errorbanner, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .fatalbanner,
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .notecontent, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .warncontent, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .errorcontent, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .notebanner, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .warnbanner, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .errorbanner, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .fatalbanner { padding-right: 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body > div > ol li { text-align: left }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .c { text-align: center }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .r { text-align: right }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .l { text-align: left }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .j { text-align: justify }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .d { text-align: right }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .b { vertical-align: bottom }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .m { vertical-align: middle }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .t { vertical-align: top }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 a:active { color: #800080 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .batch > tbody, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .batch > thead, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .batch { border: hidden; }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .bycontentfolder {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .bylinecontainer > col, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .bylinecontainer > colgroup > col, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .bylinecontainer > colgroup, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .bylinecontainer > tr, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .bylinecontainer > * > tr, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .bylinecontainer > thead, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .bylinecontainer > tbody, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .bylinecontainer > tfoot { border: none; }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .cell, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .contentfolder, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .contentitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .contentproclabel, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .data, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .folderaction {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .graph > tbody, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .graph > thead, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .graph { border: hidden; }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .heading1, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .heading2, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .heading3, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .heading4, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .heading5, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .heading6 { font-family: Arial, Helvetica, sans-serif }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .indexaction, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .indexitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutcontainer, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 a:link { color: #0000ff }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .list3, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .list4, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .list5, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .list6, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .list7, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .list8, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .listitem3, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .listitem4, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .listitem5, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .listitem6, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .listitem7, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .listitem8, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .output > tbody, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .output > thead, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .output { border: hidden; }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .pagesitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .pagesproclabel, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .parskip > col, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .parskip > colgroup > col, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .parskip > colgroup, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .parskip > tr, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .parskip > * > tr, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .parskip > thead, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .parskip > tbody, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .parskip > tfoot { border: none; }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemfooter, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemfooter10, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemfooter2, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemfooter3, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemfooter4, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemfooter5, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemfooter6, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemfooter7, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemfooter8, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemtitle, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemtitle10, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemtitle2, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemtitle3, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemtitle4, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemtitle5, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemtitle6, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemtitle7, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemtitle8, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systitleandfootercontainer > col, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systitleandfootercontainer > colgroup > col, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systitleandfootercontainer > colgroup, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systitleandfootercontainer > tr, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systitleandfootercontainer > * > tr, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systitleandfootercontainer > thead, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systitleandfootercontainer > tbody, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systitleandfootercontainer > tfoot { border: none; }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .table > col, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .table > tr, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .table { border: hidden; }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .titleandnotecontainer > col, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .titleandnotecontainer > colgroup > col, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .titleandnotecontainer > colgroup, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .titleandnotecontainer > tr, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .titleandnotecontainer > * > tr, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .titleandnotecontainer > thead, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .titleandnotecontainer > tbody, .ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .titleandnotecontainer > tfoot { border: none; }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 a:visited { color: #800080 }
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1550fac0-d48b-4357-a0ed-68c1b1163470 .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_1550fac0-d48b-4357-a0ed-68c1b1163470" class="c body">
+<h1 class="body toc">Results: WORK.MONUMENTS</h1>
+<section data-name="Print" data-sec-type="proc">
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article id="IDX" aria-label="Data Set WORK.MONUMENTS">
+<h1 class="contentitem toc">Data Set WORK.MONUMENTS</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.MONUMENTS">
+<caption aria-label="Data Set WORK.MONUMENTS"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="header" scope="col">Reg</th>
+<th class="header" scope="col">ParkName</th>
+<th class="r header" scope="col">DayVisits</th>
+<th class="r header" scope="col">OtherLodging</th>
+<th class="r header" scope="col">Campers</th>
+<th class="header" scope="col">Parktype</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">A</td>
+<td class="data">Cape Krusenstern National Monument</td>
+<td class="r data">15,000</td>
+<td class="r data">0</td>
+<td class="r data">6,375</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">IM</td>
+<td class="data">Organ Pipe Cactus National Monument</td>
+<td class="r data">234,186</td>
+<td class="r data">0</td>
+<td class="r data">27,178</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">IM</td>
+<td class="data">Dinosaur National Monument</td>
+<td class="r data">304,312</td>
+<td class="r data">0</td>
+<td class="r data">65,402</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">IM</td>
+<td class="data">White Sands National Monument</td>
+<td class="r data">555,793</td>
+<td class="r data">0</td>
+<td class="r data">4,331</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">IM</td>
+<td class="data">El Malpais National Monument</td>
+<td class="r data">157,440</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">IM</td>
+<td class="data">Canyon De Chelly National Monument</td>
+<td class="r data">821,406</td>
+<td class="r data">23,259</td>
+<td class="r data">11,918</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">PW</td>
+<td class="data">Lava Beds National Monument</td>
+<td class="r data">127,699</td>
+<td class="r data">0</td>
+<td class="r data">10,406</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">IM</td>
+<td class="data">Wupatki National Monument</td>
+<td class="r data">223,172</td>
+<td class="r data">0</td>
+<td class="r data">8</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">IM</td>
+<td class="data">Bandelier National Monument</td>
+<td class="r data">198,478</td>
+<td class="r data">0</td>
+<td class="r data">10,533</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">IM</td>
+<td class="data">Colorado National Monument</td>
+<td class="r data">391,075</td>
+<td class="r data">0</td>
+<td class="r data">31,161</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="data">SE</td>
+<td class="data">Buck Island Reef National Monument</td>
+<td class="r data">38,929</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="data">PW</td>
+<td class="data">John Day Fossil Beds National Monument</td>
+<td class="r data">210,110</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="data">IM</td>
+<td class="data">Chiricahua National Monument</td>
+<td class="r data">51,277</td>
+<td class="r data">0</td>
+<td class="r data">11,674</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="data">IM</td>
+<td class="data">Fossil Butte National Monument</td>
+<td class="r data">20,737</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="data">IM</td>
+<td class="data">Natural Bridges National Monument</td>
+<td class="r data">101,843</td>
+<td class="r data">0</td>
+<td class="r data">7,015</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="data">MW</td>
+<td class="data">Petroglyph National Monument</td>
+<td class="r data">124,177</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="data">IM</td>
+<td class="data">Cedar Breaks National Monument</td>
+<td class="r data">899,676</td>
+<td class="r data">0</td>
+<td class="r data">4,277</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="data">IM</td>
+<td class="data">Florissant Fossil Beds National Monument</td>
+<td class="r data">73,564</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="data">SE</td>
+<td class="data">Fort Pulaski National Monument</td>
+<td class="r data">344,921</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="data">PW</td>
+<td class="data">Hagerman Fossil Beds National Monument</td>
+<td class="r data">25,982</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="data">IM</td>
+<td class="data">Walnut Canyon National Monument</td>
+<td class="r data">152,444</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="data">MW</td>
+<td class="data">Agate Fossil Beds National Monument</td>
+<td class="r data">15,555</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="data">IM</td>
+<td class="data">Sunset Crater Volcano National Monument</td>
+<td class="r data">60,233</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="data">MW</td>
+<td class="data">Scotts Bluff National Monument</td>
+<td class="r data">130,085</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="data">MW</td>
+<td class="data">Effigy Mounds National Monument</td>
+<td class="r data">77,195</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="data">IM</td>
+<td class="data">Alibates Flint Quarries National Monument</td>
+<td class="r data">8,153</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="data">IM</td>
+<td class="data">Devils Tower National Monument</td>
+<td class="r data">496,210</td>
+<td class="r data">0</td>
+<td class="r data">17,383</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="data">IM</td>
+<td class="data">El Morro National Monument</td>
+<td class="r data">59,422</td>
+<td class="r data">0</td>
+<td class="r data">2,995</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="data">MW</td>
+<td class="data">Jewel Cave National Monument</td>
+<td class="r data">137,275</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="data">IM</td>
+<td class="data">Tonto National Monument</td>
+<td class="r data">38,048</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="data">IM</td>
+<td class="data">Salinas Pueblo Missions National Monument</td>
+<td class="r data">32,414</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="data">IM</td>
+<td class="data">Montezuma Castle National Monument</td>
+<td class="r data">392,168</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="data">IM</td>
+<td class="data">Tuzigoot National Monument</td>
+<td class="r data">104,604</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="data">PW</td>
+<td class="data">Devils Postpile National Monument</td>
+<td class="r data">135,404</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="data">IM</td>
+<td class="data">Capulin Volcano National Monument</td>
+<td class="r data">60,132</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="data">IM</td>
+<td class="data">Hovenweep National Monument</td>
+<td class="r data">42,862</td>
+<td class="r data">0</td>
+<td class="r data">2,395</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="data">IM</td>
+<td class="data">Little Bighorn Battlefield National Monument</td>
+<td class="r data">332,328</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="data">IM</td>
+<td class="data">Fort Union National Monument</td>
+<td class="r data">11,953</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="data">MW</td>
+<td class="data">Grand Portage National Monument</td>
+<td class="r data">95,862</td>
+<td class="r data">0</td>
+<td class="r data">36</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="data">SE</td>
+<td class="data">Ocmulgee National Monument</td>
+<td class="r data">162,260</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="data">NE</td>
+<td class="data">George Washington Birthplace National Monument</td>
+<td class="r data">129,750</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="data">PW</td>
+<td class="data">Muir Woods National Monument</td>
+<td class="r data">1,123,121</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="data">IM</td>
+<td class="data">Gila Cliff Dwellings National Monument</td>
+<td class="r data">41,519</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="data">IM</td>
+<td class="data">Casa Grande Ruins National Monument</td>
+<td class="r data">75,752</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="data">IM</td>
+<td class="data">Navajo National Monument</td>
+<td class="r data">65,705</td>
+<td class="r data">0</td>
+<td class="r data">3,377</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="data">IM</td>
+<td class="data">Aztec Ruins National Monument</td>
+<td class="r data">57,692</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="data">SE</td>
+<td class="data">Russell Cave National Monument</td>
+<td class="r data">24,649</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="data">SE</td>
+<td class="data">Fort Matanzas National Monument</td>
+<td class="r data">557,810</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="data">SE</td>
+<td class="data">Fort Frederica National Monument</td>
+<td class="r data">192,906</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="data">NC</td>
+<td class="data">Pipestone National Monument</td>
+<td class="r data">67,489</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="data">IM</td>
+<td class="data">Timpanogos Cave National Monument</td>
+<td class="r data">91,261</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="data">NE</td>
+<td class="data">Booker T. Washington National Monument</td>
+<td class="r data">23,440</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="data">SE</td>
+<td class="data">Fort Sumter National Monument</td>
+<td class="r data">888,330</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="data">MW</td>
+<td class="data">George Washington Carver National Monument</td>
+<td class="r data">46,397</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="data">IM</td>
+<td class="data">Rainbow Bridge National Monument</td>
+<td class="r data">86,369</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="data">PW</td>
+<td class="data">Cabrillo National Monument</td>
+<td class="r data">959,145</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="data">NE</td>
+<td class="data">Statue of Liberty National Monument</td>
+<td class="r data">4,501,547</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="data">MW</td>
+<td class="data">Pipe Spring National Monument</td>
+<td class="r data">46,710</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="data">NE</td>
+<td class="data">Governors Island National Monument</td>
+<td class="r data">522,859</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="data">SE</td>
+<td class="data">Castillo De San Marcos National Monument</td>
+<td class="r data">854,664</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="data">NE</td>
+<td class="data">Fort Stanwix National Monument</td>
+<td class="r data">94,006</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="data">NE</td>
+<td class="data">Castle Clinton National Monument</td>
+<td class="r data">4,812,930</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="data">NE</td>
+<td class="data">African Burial Ground National Monument</td>
+<td class="r data">46,526</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="data">Monu</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</div>
+</body>
+</html>

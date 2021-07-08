@@ -1,0 +1,134 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 refers to the same physical library as _TEMP0.
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 74         
+ 75         /*Create a new program.  (10 points)
+ 76         
+ 77             Write a DATA step to read the pg1.np_species table and create a new table named fox.
+ 78             Note: try creating fox as a permanent table in the CISP357/output folder.
+ 79         
+ 80             Include only the rows where Category is Mammal and Common_Names includes Fox in any case.
+ 81         
+ 82             Exclude the Category, Record_Status, Occurrence, and Nativeness columns.
+ 83         
+ 84         Run the program.*/
+ 85         
+ 86         data fox;
+ 87         set pg1.np_species;
+ 88         where Category='Mammal' and upcase(Common_Names) like '%FOX%';
+ 89         drop Category Record_Status Occurrence Nativeness;
+ 90         run;
+ 
+ NOTE: There were 21 observations read from the data set PG1.NP_SPECIES.
+       WHERE (Category='Mammal') and UPCASE(Common_Names) like '%FOX%';
+ NOTE: The data set WORK.FOX has 21 observations and 7 variables.
+ NOTE: DATA statement used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.00 seconds
+       system cpu time     0.01 seconds
+       memory              2326.53k
+       OS Memory           31916.00k
+       Timestamp           07/08/2021 01:41:35 AM
+       Step Count                        60  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     366
+       Page Swaps                        0
+       Voluntary Context Switches        15
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           272
+       
+ 
+ 91         
+ 92         /*Notice that Fox Squirrels are included in the output table.
+ 93         Add a condition in the WHERE statement to exclude rows that include Squirrel.
+ 94         Submit the program and verify the results. (10 points)*/
+ 95         
+ 96         data fox;
+ 97         set pg1.np_species;
+ 98         where Category='Mammal' and upcase(Common_Names) like '%FOX%'
+ 99         and upcase(Common_Names) not like '%SQUIRREL%';
+ 100        drop Category Record_Status Occurrence Nativeness;
+ 101        run;
+ 
+ NOTE: There were 18 observations read from the data set PG1.NP_SPECIES.
+       WHERE (Category='Mammal') and UPCASE(Common_Names) like '%FOX%' and UPCASE(Common_Names) not like '%SQUIRREL%';
+ NOTE: The data set WORK.FOX has 18 observations and 7 variables.
+ NOTE: DATA statement used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.01 seconds
+       system cpu time     0.00 seconds
+       memory              2329.34k
+       OS Memory           31916.00k
+       Timestamp           07/08/2021 01:41:35 AM
+       Step Count                        61  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     339
+       Page Swaps                        0
+       Voluntary Context Switches        14
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           264
+       
+ 
+ 102        
+ 103        /*Sort the fox table by Common_Names. (10 points)*/
+ 104        data fox;
+ 105        set pg1.np_species;
+ 106        where Category='Mammal' and upcase(Common_Names) like '%FOX%'
+ 107        and upcase(Common_Names) not like '%SQUIRREL%';
+ 108        drop Category Record_Status Occurrence Nativeness;
+ 109        run;
+ 
+ NOTE: There were 18 observations read from the data set PG1.NP_SPECIES.
+       WHERE (Category='Mammal') and UPCASE(Common_Names) like '%FOX%' and UPCASE(Common_Names) not like '%SQUIRREL%';
+ NOTE: The data set WORK.FOX has 18 observations and 7 variables.
+ NOTE: DATA statement used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.00 seconds
+       system cpu time     0.01 seconds
+       memory              2329.34k
+       OS Memory           31916.00k
+       Timestamp           07/08/2021 01:41:35 AM
+       Step Count                        62  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     316
+       Page Swaps                        0
+       Voluntary Context Switches        15
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           264
+       
+ 
+ 110        
+ 111        proc sort data=fox;
+ 112        by Common_Names;
+ 113        run;
+ 
+ NOTE: There were 18 observations read from the data set WORK.FOX.
+ NOTE: The data set WORK.FOX has 18 observations and 7 variables.
+ NOTE: PROCEDURE SORT used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.00 seconds
+       system cpu time     0.00 seconds
+       memory              914.84k
+       OS Memory           31148.00k
+       Timestamp           07/08/2021 01:41:35 AM
+       Step Count                        63  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     127
+       Page Swaps                        0
+       Voluntary Context Switches        12
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           264
+       
+ 
+ 114        
+ 115        OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 127        

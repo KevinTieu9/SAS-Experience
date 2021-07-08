@@ -1,0 +1,3920 @@
+<!DOCTYPE html>
+<html class="ods_1c9ed865-c724-4f22-91e9-b79b5d185938" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>Results: WORK.EU_OCC2016</title>
+<style>
+/*<![CDATA[*/
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.c section > table, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.c section > pre, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.c div > table,
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.c div > pre, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.c article > table, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.c article > pre,
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.j section > table, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.j section > pre, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.j div > table,
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.j div > pre, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.j article > table, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.j article > pre,
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.c p.note, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.c p.warning, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.c p.error, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.c p.fatal,
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.j p.note, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.j p.warning, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.j p.error, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.j p.fatal,
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.c > table.layoutcontainer, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.l table, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.l pre, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.l p.note,
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.l p.warning, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.l p.error, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.l p.fatal { margin-left: 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.c table, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.c pre, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.c p.note,
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.c p.warning, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.c p.error, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.r table, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.r pre, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.r p.note,
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.r table, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.r pre, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.r p.note,
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.r p.warning, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.r p.error, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion.r p.fatal { margin-right: 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 article, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 aside, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 details, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 figcaption, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 figure, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 footer, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 header, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 hgroup, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 nav, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 section { display: block }
+html.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 { font-size: 100% }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 ul, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 dd { margin: 0 0 0 40px }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 nav ul, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 img { border: 0; vertical-align: middle }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 svg:not(:root) { overflow: hidden }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 figure { margin: 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 table { border-collapse: collapse; border-spacing: 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 p { margin-top: 0; text-align: left }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 h1.heading1 { text-align: left }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 h2.heading2 { text-align: left }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 h3.heading3 { text-align: left }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 h4.heading4 { text-align: left }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 h5.heading5 { text-align: left }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 h6.heading6 { text-align: left }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 span { text-align: left }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 table { margin-bottom: 1em }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 td, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 td[class$="fixed"], .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 th[class$="fixed"] { white-space: pre }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 section, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 article { padding-top: 1px; padding-bottom: 8px }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .stacked-value { text-align: left; display: block }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .stacked-cell > .stacked-value, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 td.data > td.data, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 th.data > td.data, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 th.data > th.data, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 td.data > th.data, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 th.header > th.header { border: 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .stacked-cell > div.data { border-width: 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systitleandfootercontainer > p { margin: 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .batch { display: table }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .toc { display: none }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .proc_note_group, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .proc_title_group { margin-bottom: 1em }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 p.proctitle { margin: 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 p.note, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 p.warning, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 p.error, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 p.fatal { display: table }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .notebanner, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .warnbanner, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .errorbanner, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .fatalbanner,
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .notecontent, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .warncontent, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .errorcontent, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .notebanner, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .warnbanner, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .errorbanner, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .fatalbanner { padding-right: 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body > div > ol li { text-align: left }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .c { text-align: center }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .r { text-align: right }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .l { text-align: left }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .j { text-align: justify }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .d { text-align: right }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .b { vertical-align: bottom }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .m { vertical-align: middle }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .t { vertical-align: top }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 a:active { color: #800080 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .batch > tbody, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .batch > thead, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .batch { border: hidden; }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .bycontentfolder {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .bylinecontainer > col, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .bylinecontainer > colgroup > col, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .bylinecontainer > colgroup, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .bylinecontainer > tr, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .bylinecontainer > * > tr, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .bylinecontainer > thead, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .bylinecontainer > tbody, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .bylinecontainer > tfoot { border: none; }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .cell, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .contentfolder, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .contentitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .contentproclabel, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .data, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .folderaction {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .graph > tbody, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .graph > thead, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .graph { border: hidden; }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .heading1, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .heading2, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .heading3, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .heading4, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .heading5, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .heading6 { font-family: Arial, Helvetica, sans-serif }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .indexaction, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .indexitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutcontainer, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 a:link { color: #0000ff }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .list3, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .list4, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .list5, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .list6, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .list7, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .list8, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .listitem3, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .listitem4, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .listitem5, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .listitem6, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .listitem7, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .listitem8, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .output > tbody, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .output > thead, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .output { border: hidden; }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .pagesitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .pagesproclabel, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .parskip > col, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .parskip > colgroup > col, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .parskip > colgroup, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .parskip > tr, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .parskip > * > tr, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .parskip > thead, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .parskip > tbody, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .parskip > tfoot { border: none; }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemfooter, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemfooter10, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemfooter2, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemfooter3, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemfooter4, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemfooter5, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemfooter6, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemfooter7, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemfooter8, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemtitle, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemtitle10, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemtitle2, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemtitle3, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemtitle4, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemtitle5, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemtitle6, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemtitle7, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemtitle8, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systitleandfootercontainer > col, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systitleandfootercontainer > colgroup > col, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systitleandfootercontainer > colgroup, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systitleandfootercontainer > tr, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systitleandfootercontainer > * > tr, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systitleandfootercontainer > thead, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systitleandfootercontainer > tbody, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systitleandfootercontainer > tfoot { border: none; }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .table > col, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .table > tr, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .table { border: hidden; }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .titleandnotecontainer > col, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .titleandnotecontainer > colgroup > col, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .titleandnotecontainer > colgroup, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .titleandnotecontainer > tr, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .titleandnotecontainer > * > tr, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .titleandnotecontainer > thead, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .titleandnotecontainer > tbody, .ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .titleandnotecontainer > tfoot { border: none; }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 a:visited { color: #800080 }
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_1c9ed865-c724-4f22-91e9-b79b5d185938 .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_1c9ed865-c724-4f22-91e9-b79b5d185938" class="c body">
+<h1 class="body toc">Results: WORK.EU_OCC2016</h1>
+<section data-name="Print" data-sec-type="proc">
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article id="IDX" aria-label="Data Set WORK.EU_OCC2016">
+<h1 class="contentitem toc">Data Set WORK.EU_OCC2016</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.EU_OCC2016">
+<caption aria-label="Data Set WORK.EU_OCC2016"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="header" scope="col">Country</th>
+<th class="header" scope="col">YearMon</th>
+<th class="r header" scope="col">Hotel</th>
+<th class="r header" scope="col">ShortStay</th>
+<th class="r header" scope="col">Camp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">Austria</td>
+<td class="data">2016M12</td>
+<td class="r data">6,670,483</td>
+<td class="r data">1,468,847</td>
+<td class="r data">117,579</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">Austria</td>
+<td class="data">2016M11</td>
+<td class="r data">3,600,616</td>
+<td class="r data">681,867</td>
+<td class="r data">28,303</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">Austria</td>
+<td class="data">2016M10</td>
+<td class="r data">5,727,389</td>
+<td class="r data">985,402</td>
+<td class="r data">146,108</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">Austria</td>
+<td class="data">2016M09</td>
+<td class="r data">7,726,801</td>
+<td class="r data">1,443,829</td>
+<td class="r data">620,032</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">Austria</td>
+<td class="data">2016M08</td>
+<td class="r data">11,399,594</td>
+<td class="r data">3,022,261</td>
+<td class="r data">1,897,979</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">Austria</td>
+<td class="data">2016M07</td>
+<td class="r data">9,996,416</td>
+<td class="r data">2,633,484</td>
+<td class="r data">1,608,971</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">Austria</td>
+<td class="data">2016M06</td>
+<td class="r data">6,444,485</td>
+<td class="r data">1,287,244</td>
+<td class="r data">569,242</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">Austria</td>
+<td class="data">2016M05</td>
+<td class="r data">5,619,330</td>
+<td class="r data">1,118,179</td>
+<td class="r data">445,622</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">Austria</td>
+<td class="data">2016M04</td>
+<td class="r data">4,272,536</td>
+<td class="r data">889,815</td>
+<td class="r data">104,499</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">Austria</td>
+<td class="data">2016M03</td>
+<td class="r data">9,595,174</td>
+<td class="r data">2,726,831</td>
+<td class="r data">144,641</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="data">Austria</td>
+<td class="data">2016M02</td>
+<td class="r data">10,318,480</td>
+<td class="r data">3,128,010</td>
+<td class="r data">132,035</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="data">Austria</td>
+<td class="data">2016M01</td>
+<td class="r data">8,713,294</td>
+<td class="r data">2,555,454</td>
+<td class="r data">116,407</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="data">Belgium</td>
+<td class="data">2016M12</td>
+<td class="r data">1,420,777</td>
+<td class="r data">902,658</td>
+<td class="r data">53,658</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="data">Belgium</td>
+<td class="data">2016M11</td>
+<td class="r data">1,359,791</td>
+<td class="r data">952,168</td>
+<td class="r data">61,041</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="data">Belgium</td>
+<td class="data">2016M10</td>
+<td class="r data">1,588,550</td>
+<td class="r data">1,403,176</td>
+<td class="r data">131,809</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="data">Belgium</td>
+<td class="data">2016M09</td>
+<td class="r data">1,562,430</td>
+<td class="r data">1,411,325</td>
+<td class="r data">202,083</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="data">Belgium</td>
+<td class="data">2016M08</td>
+<td class="r data">1,680,684</td>
+<td class="r data">2,608,860</td>
+<td class="r data">793,959</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="data">Belgium</td>
+<td class="data">2016M07</td>
+<td class="r data">1,691,525</td>
+<td class="r data">2,809,491</td>
+<td class="r data">659,580</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="data">Belgium</td>
+<td class="data">2016M06</td>
+<td class="r data">1,475,711</td>
+<td class="r data">1,332,320</td>
+<td class="r data">214,964</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="data">Belgium</td>
+<td class="data">2016M05</td>
+<td class="r data">1,513,325</td>
+<td class="r data">1,520,157</td>
+<td class="r data">312,136</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="data">Belgium</td>
+<td class="data">2016M04</td>
+<td class="r data">1,364,182</td>
+<td class="r data">1,404,612</td>
+<td class="r data">151,623</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="data">Belgium</td>
+<td class="data">2016M03</td>
+<td class="r data">1,303,512</td>
+<td class="r data">1,170,610</td>
+<td class="r data">101,147</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="data">Belgium</td>
+<td class="data">2016M02</td>
+<td class="r data">1,188,264</td>
+<td class="r data">872,101</td>
+<td class="r data">56,750</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="data">Belgium</td>
+<td class="data">2016M01</td>
+<td class="r data">1,034,644</td>
+<td class="r data">512,589</td>
+<td class="r data">33,002</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="data">Bulgaria</td>
+<td class="data">2016M12</td>
+<td class="r data">734,344</td>
+<td class="r data">73,814</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="data">Bulgaria</td>
+<td class="data">2016M11</td>
+<td class="r data">589,739</td>
+<td class="r data">53,858</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="data">Bulgaria</td>
+<td class="data">2016M10</td>
+<td class="r data">815,500</td>
+<td class="r data">66,259</td>
+<td class="r data">22</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="data">Bulgaria</td>
+<td class="data">2016M09</td>
+<td class="r data">2,895,051</td>
+<td class="r data">174,253</td>
+<td class="r data">4,318</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="data">Bulgaria</td>
+<td class="data">2016M08</td>
+<td class="r data">5,342,880</td>
+<td class="r data">472,763</td>
+<td class="r data">22,511</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="data">Bulgaria</td>
+<td class="data">2016M07</td>
+<td class="r data">5,246,104</td>
+<td class="r data">465,469</td>
+<td class="r data">23,261</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="data">Bulgaria</td>
+<td class="data">2016M06</td>
+<td class="r data">3,395,735</td>
+<td class="r data">181,316</td>
+<td class="r data">6,470</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="data">Bulgaria</td>
+<td class="data">2016M05</td>
+<td class="r data">1,283,849</td>
+<td class="r data">66,491</td>
+<td class="r data">124</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="data">Bulgaria</td>
+<td class="data">2016M04</td>
+<td class="r data">752,341</td>
+<td class="r data">61,793</td>
+<td class="r data">268</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="data">Bulgaria</td>
+<td class="data">2016M03</td>
+<td class="r data">683,275</td>
+<td class="r data">58,875</td>
+<td class="r data">33</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="data">Bulgaria</td>
+<td class="data">2016M02</td>
+<td class="r data">829,420</td>
+<td class="r data">74,112</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="data">Bulgaria</td>
+<td class="data">2016M01</td>
+<td class="r data">751,293</td>
+<td class="r data">60,455</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="data">Cyprus</td>
+<td class="data">2016M12</td>
+<td class="r data">272,442</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="data">Cyprus</td>
+<td class="data">2016M11</td>
+<td class="r data">598,821</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="data">Cyprus</td>
+<td class="data">2016M10</td>
+<td class="r data">1,846,069</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="data">Cyprus</td>
+<td class="data">2016M09</td>
+<td class="r data">2,111,802</td>
+<td class="r data">0</td>
+<td class="r data">43</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="data">Cyprus</td>
+<td class="data">2016M08</td>
+<td class="r data">2,464,916</td>
+<td class="r data">0</td>
+<td class="r data">957</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="data">Cyprus</td>
+<td class="data">2016M07</td>
+<td class="r data">2,407,259</td>
+<td class="r data">0</td>
+<td class="r data">345</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="data">Cyprus</td>
+<td class="data">2016M06</td>
+<td class="r data">2,079,404</td>
+<td class="r data">0</td>
+<td class="r data">225</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="data">Cyprus</td>
+<td class="data">2016M05</td>
+<td class="r data">1,737,838</td>
+<td class="r data">0</td>
+<td class="r data">34</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="data">Cyprus</td>
+<td class="data">2016M04</td>
+<td class="r data">855,558</td>
+<td class="r data">0</td>
+<td class="r data">37</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="data">Cyprus</td>
+<td class="data">2016M03</td>
+<td class="r data">474,197</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="data">Cyprus</td>
+<td class="data">2016M02</td>
+<td class="r data">280,506</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="data">Cyprus</td>
+<td class="data">2016M01</td>
+<td class="r data">218,431</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="data">Czech Republic</td>
+<td class="data">2016M12</td>
+<td class="r data">2,579,782</td>
+<td class="r data">436,877</td>
+<td class="r data">5,145</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="data">Czech Republic</td>
+<td class="data">2016M11</td>
+<td class="r data">2,435,089</td>
+<td class="r data">550,833</td>
+<td class="r data">3,810</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="data">Czech Republic</td>
+<td class="data">2016M10</td>
+<td class="r data">3,182,000</td>
+<td class="r data">656,623</td>
+<td class="r data">16,017</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="data">Czech Republic</td>
+<td class="data">2016M09</td>
+<td class="r data">3,459,037</td>
+<td class="r data">933,928</td>
+<td class="r data">195,424</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="data">Czech Republic</td>
+<td class="data">2016M08</td>
+<td class="r data">4,412,804</td>
+<td class="r data">1,710,151</td>
+<td class="r data">988,241</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="data">Czech Republic</td>
+<td class="data">2016M07</td>
+<td class="r data">4,287,970</td>
+<td class="r data">1,832,396</td>
+<td class="r data">1,226,279</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="data">Czech Republic</td>
+<td class="data">2016M06</td>
+<td class="r data">3,169,147</td>
+<td class="r data">930,912</td>
+<td class="r data">203,627</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="data">Czech Republic</td>
+<td class="data">2016M05</td>
+<td class="r data">3,191,613</td>
+<td class="r data">815,914</td>
+<td class="r data">106,914</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="data">Czech Republic</td>
+<td class="data">2016M04</td>
+<td class="r data">2,601,600</td>
+<td class="r data">597,353</td>
+<td class="r data">23,967</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="data">Czech Republic</td>
+<td class="data">2016M03</td>
+<td class="r data">2,727,984</td>
+<td class="r data">665,636</td>
+<td class="r data">6,397</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="data">Czech Republic</td>
+<td class="data">2016M02</td>
+<td class="r data">2,356,387</td>
+<td class="r data">718,729</td>
+<td class="r data">3,810</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="data">Czech Republic</td>
+<td class="data">2016M01</td>
+<td class="r data">2,089,326</td>
+<td class="r data">572,161</td>
+<td class="r data">3,074</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="data">Germany</td>
+<td class="data">2016M12</td>
+<td class="r data">19,434,488</td>
+<td class="r data">3,340,029</td>
+<td class="r data">323,657</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="data">Germany</td>
+<td class="data">2016M11</td>
+<td class="r data">20,111,533</td>
+<td class="r data">3,375,957</td>
+<td class="r data">254,321</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="data">Germany</td>
+<td class="data">2016M10</td>
+<td class="r data">26,849,351</td>
+<td class="r data">7,937,903</td>
+<td class="r data">1,834,590</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="data">Germany</td>
+<td class="data">2016M09</td>
+<td class="r data">28,393,443</td>
+<td class="r data">8,112,049</td>
+<td class="r data">3,235,780</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="data">Germany</td>
+<td class="data">2016M08</td>
+<td class="r data">29,066,078</td>
+<td class="r data">11,419,188</td>
+<td class="r data">8,009,092</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="data">Germany</td>
+<td class="data">2016M07</td>
+<td class="r data">28,594,771</td>
+<td class="r data">11,236,456</td>
+<td class="r data">7,284,171</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="data">Germany</td>
+<td class="data">2016M06</td>
+<td class="r data">25,579,466</td>
+<td class="r data">7,879,395</td>
+<td class="r data">3,179,208</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">68</th>
+<td class="data">Germany</td>
+<td class="data">2016M05</td>
+<td class="r data">25,898,364</td>
+<td class="r data">8,141,512</td>
+<td class="r data">4,023,105</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">69</th>
+<td class="data">Germany</td>
+<td class="data">2016M04</td>
+<td class="r data">21,725,051</td>
+<td class="r data">5,045,753</td>
+<td class="r data">1,037,566</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">70</th>
+<td class="data">Germany</td>
+<td class="data">2016M03</td>
+<td class="r data">20,715,048</td>
+<td class="r data">5,331,267</td>
+<td class="r data">849,785</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">71</th>
+<td class="data">Germany</td>
+<td class="data">2016M02</td>
+<td class="r data">17,622,346</td>
+<td class="r data">3,923,956</td>
+<td class="r data">190,152</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">72</th>
+<td class="data">Germany</td>
+<td class="data">2016M01</td>
+<td class="r data">15,801,624</td>
+<td class="r data">3,286,175</td>
+<td class="r data">245,913</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">73</th>
+<td class="data">Denmark</td>
+<td class="data">2016M12</td>
+<td class="r data">933,323</td>
+<td class="r data">237,980</td>
+<td class="r data">108,593</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">74</th>
+<td class="data">Denmark</td>
+<td class="data">2016M11</td>
+<td class="r data">1,119,003</td>
+<td class="r data">307,846</td>
+<td class="r data">112,049</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">75</th>
+<td class="data">Denmark</td>
+<td class="data">2016M10</td>
+<td class="r data">1,249,827</td>
+<td class="r data">544,783</td>
+<td class="r data">318,535</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">76</th>
+<td class="data">Denmark</td>
+<td class="data">2016M09</td>
+<td class="r data">1,372,512</td>
+<td class="r data">450,223</td>
+<td class="r data">778,147</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">77</th>
+<td class="data">Denmark</td>
+<td class="data">2016M08</td>
+<td class="r data">1,744,933</td>
+<td class="r data">812,252</td>
+<td class="r data">2,117,978</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">78</th>
+<td class="data">Denmark</td>
+<td class="data">2016M07</td>
+<td class="r data">1,959,668</td>
+<td class="r data">1,020,674</td>
+<td class="r data">3,669,669</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">79</th>
+<td class="data">Denmark</td>
+<td class="data">2016M06</td>
+<td class="r data">1,498,862</td>
+<td class="r data">552,815</td>
+<td class="r data">1,419,451</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">80</th>
+<td class="data">Denmark</td>
+<td class="data">2016M05</td>
+<td class="r data">1,375,491</td>
+<td class="r data">475,277</td>
+<td class="r data">1,261,926</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">81</th>
+<td class="data">Denmark</td>
+<td class="data">2016M04</td>
+<td class="r data">1,148,235</td>
+<td class="r data">357,732</td>
+<td class="r data">729,432</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">82</th>
+<td class="data">Denmark</td>
+<td class="data">2016M03</td>
+<td class="r data">1,020,317</td>
+<td class="r data">392,043</td>
+<td class="r data">292,062</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">83</th>
+<td class="data">Denmark</td>
+<td class="data">2016M02</td>
+<td class="r data">861,242</td>
+<td class="r data">346,233</td>
+<td class="r data">98,870</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">84</th>
+<td class="data">Denmark</td>
+<td class="data">2016M01</td>
+<td class="r data">779,106</td>
+<td class="r data">208,936</td>
+<td class="r data">103,859</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">85</th>
+<td class="data">Estonia</td>
+<td class="data">2016M12</td>
+<td class="r data">390,738</td>
+<td class="r data">64,571</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">86</th>
+<td class="data">Estonia</td>
+<td class="data">2016M11</td>
+<td class="r data">344,396</td>
+<td class="r data">60,445</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">87</th>
+<td class="data">Estonia</td>
+<td class="data">2016M10</td>
+<td class="r data">428,594</td>
+<td class="r data">75,009</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">88</th>
+<td class="data">Estonia</td>
+<td class="data">2016M09</td>
+<td class="r data">403,582</td>
+<td class="r data">77,245</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">89</th>
+<td class="data">Estonia</td>
+<td class="data">2016M08</td>
+<td class="r data">588,905</td>
+<td class="r data">210,805</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">90</th>
+<td class="data">Estonia</td>
+<td class="data">2016M07</td>
+<td class="r data">685,553</td>
+<td class="r data">253,377</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">91</th>
+<td class="data">Estonia</td>
+<td class="data">2016M06</td>
+<td class="r data">505,042</td>
+<td class="r data">148,716</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">92</th>
+<td class="data">Estonia</td>
+<td class="data">2016M05</td>
+<td class="r data">437,124</td>
+<td class="r data">78,012</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">93</th>
+<td class="data">Estonia</td>
+<td class="data">2016M04</td>
+<td class="r data">368,569</td>
+<td class="r data">56,010</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">94</th>
+<td class="data">Estonia</td>
+<td class="data">2016M03</td>
+<td class="r data">339,381</td>
+<td class="r data">53,122</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">95</th>
+<td class="data">Estonia</td>
+<td class="data">2016M02</td>
+<td class="r data">278,540</td>
+<td class="r data">47,786</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">96</th>
+<td class="data">Estonia</td>
+<td class="data">2016M01</td>
+<td class="r data">283,601</td>
+<td class="r data">49,005</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">97</th>
+<td class="data">Spain</td>
+<td class="data">2016M12</td>
+<td class="r data">16,013,165</td>
+<td class="r data">5,104,379</td>
+<td class="r data">1,045,719</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">98</th>
+<td class="data">Spain</td>
+<td class="data">2016M11</td>
+<td class="r data">17,134,705</td>
+<td class="r data">4,774,532</td>
+<td class="r data">943,648</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">99</th>
+<td class="data">Spain</td>
+<td class="data">2016M10</td>
+<td class="r data">30,587,998</td>
+<td class="r data">7,090,964</td>
+<td class="r data">1,707,882</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">100</th>
+<td class="data">Spain</td>
+<td class="data">2016M09</td>
+<td class="r data">37,218,421</td>
+<td class="r data">8,733,738</td>
+<td class="r data">3,345,244</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">101</th>
+<td class="data">Spain</td>
+<td class="data">2016M08</td>
+<td class="r data">46,502,956</td>
+<td class="r data">14,449,380</td>
+<td class="r data">10,425,182</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">102</th>
+<td class="data">Spain</td>
+<td class="data">2016M07</td>
+<td class="r data">42,948,946</td>
+<td class="r data">12,349,138</td>
+<td class="r data">7,525,715</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">103</th>
+<td class="data">Spain</td>
+<td class="data">2016M06</td>
+<td class="r data">34,430,872</td>
+<td class="r data">8,153,551</td>
+<td class="r data">3,457,378</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">104</th>
+<td class="data">Spain</td>
+<td class="data">2016M05</td>
+<td class="r data">30,401,275</td>
+<td class="r data">6,433,930</td>
+<td class="r data">2,346,489</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">105</th>
+<td class="data">Spain</td>
+<td class="data">2016M04</td>
+<td class="r data">23,056,973</td>
+<td class="r data">5,171,253</td>
+<td class="r data">1,750,607</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">106</th>
+<td class="data">Spain</td>
+<td class="data">2016M03</td>
+<td class="r data">22,022,933</td>
+<td class="r data">5,858,497</td>
+<td class="r data">2,001,701</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">107</th>
+<td class="data">Spain</td>
+<td class="data">2016M02</td>
+<td class="r data">16,379,849</td>
+<td class="r data">4,614,043</td>
+<td class="r data">1,070,824</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">108</th>
+<td class="data">Spain</td>
+<td class="data">2016M01</td>
+<td class="r data">14,470,852</td>
+<td class="r data">4,413,262</td>
+<td class="r data">1,021,249</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">109</th>
+<td class="data">Finland</td>
+<td class="data">2016M12</td>
+<td class="r data">1,324,949</td>
+<td class="r data">159,050</td>
+<td class="r data">38,432</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">110</th>
+<td class="data">Finland</td>
+<td class="data">2016M11</td>
+<td class="r data">1,193,444</td>
+<td class="r data">96,905</td>
+<td class="r data">33,908</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">111</th>
+<td class="data">Finland</td>
+<td class="data">2016M10</td>
+<td class="r data">1,268,751</td>
+<td class="r data">106,339</td>
+<td class="r data">57,116</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">112</th>
+<td class="data">Finland</td>
+<td class="data">2016M09</td>
+<td class="r data">1,372,314</td>
+<td class="r data">163,422</td>
+<td class="r data">109,919</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">113</th>
+<td class="data">Finland</td>
+<td class="data">2016M08</td>
+<td class="r data">1,678,002</td>
+<td class="r data">196,372</td>
+<td class="r data">320,352</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">114</th>
+<td class="data">Finland</td>
+<td class="data">2016M07</td>
+<td class="r data">2,070,553</td>
+<td class="r data">283,067</td>
+<td class="r data">651,006</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">115</th>
+<td class="data">Finland</td>
+<td class="data">2016M06</td>
+<td class="r data">1,487,305</td>
+<td class="r data">162,126</td>
+<td class="r data">321,939</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">116</th>
+<td class="data">Finland</td>
+<td class="data">2016M05</td>
+<td class="r data">1,163,945</td>
+<td class="r data">92,178</td>
+<td class="r data">93,829</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">117</th>
+<td class="data">Finland</td>
+<td class="data">2016M04</td>
+<td class="r data">1,220,048</td>
+<td class="r data">133,049</td>
+<td class="r data">57,011</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">118</th>
+<td class="data">Finland</td>
+<td class="data">2016M03</td>
+<td class="r data">1,420,827</td>
+<td class="r data">210,044</td>
+<td class="r data">66,199</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">119</th>
+<td class="data">Finland</td>
+<td class="data">2016M02</td>
+<td class="r data">1,291,836</td>
+<td class="r data">163,149</td>
+<td class="r data">33,434</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">120</th>
+<td class="data">Finland</td>
+<td class="data">2016M01</td>
+<td class="r data">1,136,688</td>
+<td class="r data">133,383</td>
+<td class="r data">32,542</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">121</th>
+<td class="data">France</td>
+<td class="data">2016M12</td>
+<td class="r data">13,795,955</td>
+<td class="r data">4,636,480</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">122</th>
+<td class="data">France</td>
+<td class="data">2016M11</td>
+<td class="r data">13,051,843</td>
+<td class="r data">2,889,161</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">123</th>
+<td class="data">France</td>
+<td class="data">2016M10</td>
+<td class="r data">17,469,044</td>
+<td class="r data">5,476,788</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">124</th>
+<td class="data">France</td>
+<td class="data">2016M09</td>
+<td class="r data">19,230,258</td>
+<td class="r data">6,859,531</td>
+<td class="r data">9,885,898</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">125</th>
+<td class="data">France</td>
+<td class="data">2016M08</td>
+<td class="r data">23,132,467</td>
+<td class="r data">14,752,147</td>
+<td class="r data">46,045,595</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">126</th>
+<td class="data">France</td>
+<td class="data">2016M07</td>
+<td class="r data">22,769,247</td>
+<td class="r data">12,957,728</td>
+<td class="r data">37,544,738</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">127</th>
+<td class="data">France</td>
+<td class="data">2016M06</td>
+<td class="r data">19,567,113</td>
+<td class="r data">6,864,276</td>
+<td class="r data">10,960,307</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">128</th>
+<td class="data">France</td>
+<td class="data">2016M05</td>
+<td class="r data">18,601,526</td>
+<td class="r data">6,257,752</td>
+<td class="r data">7,729,887</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">129</th>
+<td class="data">France</td>
+<td class="data">2016M04</td>
+<td class="r data">15,942,908</td>
+<td class="r data">6,923,961</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">130</th>
+<td class="data">France</td>
+<td class="data">2016M03</td>
+<td class="r data">15,741,502</td>
+<td class="r data">7,766,472</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">131</th>
+<td class="data">France</td>
+<td class="data">2016M02</td>
+<td class="r data">12,934,870</td>
+<td class="r data">7,501,156</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">132</th>
+<td class="data">France</td>
+<td class="data">2016M01</td>
+<td class="r data">11,640,316</td>
+<td class="r data">5,879,523</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">133</th>
+<td class="data">Croatia</td>
+<td class="data">2016M12</td>
+<td class="r data">394,181</td>
+<td class="r data">186,080</td>
+<td class="r data">7,229</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">134</th>
+<td class="data">Croatia</td>
+<td class="data">2016M11</td>
+<td class="r data">412,241</td>
+<td class="r data">184,588</td>
+<td class="r data">7,871</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">135</th>
+<td class="data">Croatia</td>
+<td class="data">2016M10</td>
+<td class="r data">1,514,109</td>
+<td class="r data">600,946</td>
+<td class="r data">146,014</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">136</th>
+<td class="data">Croatia</td>
+<td class="data">2016M09</td>
+<td class="r data">3,488,541</td>
+<td class="r data">3,914,473</td>
+<td class="r data">2,238,588</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">137</th>
+<td class="data">Croatia</td>
+<td class="data">2016M08</td>
+<td class="r data">5,036,397</td>
+<td class="r data">14,191,955</td>
+<td class="r data">6,191,896</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">138</th>
+<td class="data">Croatia</td>
+<td class="data">2016M07</td>
+<td class="r data">4,787,351</td>
+<td class="r data">12,579,205</td>
+<td class="r data">5,432,792</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">139</th>
+<td class="data">Croatia</td>
+<td class="data">2016M06</td>
+<td class="r data">3,156,437</td>
+<td class="r data">3,543,789</td>
+<td class="r data">2,239,942</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">140</th>
+<td class="data">Croatia</td>
+<td class="data">2016M05</td>
+<td class="r data">2,157,847</td>
+<td class="r data">1,117,438</td>
+<td class="r data">981,703</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">141</th>
+<td class="data">Croatia</td>
+<td class="data">2016M04</td>
+<td class="r data">1,140,892</td>
+<td class="r data">327,746</td>
+<td class="r data">198,553</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">142</th>
+<td class="data">Croatia</td>
+<td class="data">2016M03</td>
+<td class="r data">617,059</td>
+<td class="r data">189,375</td>
+<td class="r data">33,094</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">143</th>
+<td class="data">Croatia</td>
+<td class="data">2016M02</td>
+<td class="r data">300,000</td>
+<td class="r data">116,671</td>
+<td class="r data">2,632</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">144</th>
+<td class="data">Croatia</td>
+<td class="data">2016M01</td>
+<td class="r data">257,791</td>
+<td class="r data">125,386</td>
+<td class="r data">3,302</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">145</th>
+<td class="data">Hungary</td>
+<td class="data">2016M12</td>
+<td class="r data">1,623,547</td>
+<td class="r data">162,116</td>
+<td class="r data">7,235</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">146</th>
+<td class="data">Hungary</td>
+<td class="data">2016M11</td>
+<td class="r data">1,652,016</td>
+<td class="r data">173,776</td>
+<td class="r data">12,852</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">147</th>
+<td class="data">Hungary</td>
+<td class="data">2016M10</td>
+<td class="r data">1,922,311</td>
+<td class="r data">228,253</td>
+<td class="r data">48,303</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">148</th>
+<td class="data">Hungary</td>
+<td class="data">2016M09</td>
+<td class="r data">2,048,227</td>
+<td class="r data">329,700</td>
+<td class="r data">129,172</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">149</th>
+<td class="data">Hungary</td>
+<td class="data">2016M08</td>
+<td class="r data">3,040,351</td>
+<td class="r data">1,107,136</td>
+<td class="r data">566,190</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">150</th>
+<td class="data">Hungary</td>
+<td class="data">2016M07</td>
+<td class="r data">2,888,772</td>
+<td class="r data">1,184,900</td>
+<td class="r data">629,980</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">151</th>
+<td class="data">Hungary</td>
+<td class="data">2016M06</td>
+<td class="r data">2,028,886</td>
+<td class="r data">602,158</td>
+<td class="r data">187,811</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">152</th>
+<td class="data">Hungary</td>
+<td class="data">2016M05</td>
+<td class="r data">1,911,544</td>
+<td class="r data">360,843</td>
+<td class="r data">123,529</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">153</th>
+<td class="data">Hungary</td>
+<td class="data">2016M04</td>
+<td class="r data">1,604,411</td>
+<td class="r data">209,814</td>
+<td class="r data">43,706</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">154</th>
+<td class="data">Hungary</td>
+<td class="data">2016M03</td>
+<td class="r data">1,589,881</td>
+<td class="r data">175,664</td>
+<td class="r data">25,394</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">155</th>
+<td class="data">Hungary</td>
+<td class="data">2016M02</td>
+<td class="r data">1,253,079</td>
+<td class="r data">122,354</td>
+<td class="r data">6,115</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">156</th>
+<td class="data">Hungary</td>
+<td class="data">2016M01</td>
+<td class="r data">1,175,630</td>
+<td class="r data">108,980</td>
+<td class="r data">6,532</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">157</th>
+<td class="data">Iceland</td>
+<td class="data">2016M12</td>
+<td class="r data">326,452</td>
+<td class="r data">79,845</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">158</th>
+<td class="data">Iceland</td>
+<td class="data">2016M11</td>
+<td class="r data">335,151</td>
+<td class="r data">87,149</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">159</th>
+<td class="data">Iceland</td>
+<td class="data">2016M10</td>
+<td class="r data">391,738</td>
+<td class="r data">118,162</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">160</th>
+<td class="data">Iceland</td>
+<td class="data">2016M09</td>
+<td class="r data">486,576</td>
+<td class="r data">182,341</td>
+<td class="r data">48,337</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">161</th>
+<td class="data">Iceland</td>
+<td class="data">2016M08</td>
+<td class="r data">701,168</td>
+<td class="r data">341,468</td>
+<td class="r data">352,291</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">162</th>
+<td class="data">Iceland</td>
+<td class="data">2016M07</td>
+<td class="r data">724,375</td>
+<td class="r data">343,513</td>
+<td class="r data">459,207</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">163</th>
+<td class="data">Iceland</td>
+<td class="data">2016M06</td>
+<td class="r data">570,624</td>
+<td class="r data">270,481</td>
+<td class="r data">179,376</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">164</th>
+<td class="data">Iceland</td>
+<td class="data">2016M05</td>
+<td class="r data">367,524</td>
+<td class="r data">133,505</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">165</th>
+<td class="data">Iceland</td>
+<td class="data">2016M04</td>
+<td class="r data">291,609</td>
+<td class="r data">113,566</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">166</th>
+<td class="data">Iceland</td>
+<td class="data">2016M03</td>
+<td class="r data">366,278</td>
+<td class="r data">108,882</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">167</th>
+<td class="data">Iceland</td>
+<td class="data">2016M02</td>
+<td class="r data">316,660</td>
+<td class="r data">74,267</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">168</th>
+<td class="data">Iceland</td>
+<td class="data">2016M01</td>
+<td class="r data">221,476</td>
+<td class="r data">61,082</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">169</th>
+<td class="data">Italy</td>
+<td class="data">2016M12</td>
+<td class="r data">11,916,338</td>
+<td class="r data">3,035,864</td>
+<td class="r data">390,693</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">170</th>
+<td class="data">Italy</td>
+<td class="data">2016M11</td>
+<td class="r data">10,171,571</td>
+<td class="r data">2,414,015</td>
+<td class="r data">253,125</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">171</th>
+<td class="data">Italy</td>
+<td class="data">2016M10</td>
+<td class="r data">18,423,649</td>
+<td class="r data">4,559,120</td>
+<td class="r data">1,242,728</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">172</th>
+<td class="data">Italy</td>
+<td class="data">2016M09</td>
+<td class="r data">29,399,900</td>
+<td class="r data">8,347,015</td>
+<td class="r data">6,064,354</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">173</th>
+<td class="data">Italy</td>
+<td class="data">2016M08</td>
+<td class="r data">46,453,178</td>
+<td class="r data">18,354,912</td>
+<td class="r data">18,626,243</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">174</th>
+<td class="data">Italy</td>
+<td class="data">2016M07</td>
+<td class="r data">42,248,644</td>
+<td class="r data">15,641,291</td>
+<td class="r data">14,194,478</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">175</th>
+<td class="data">Italy</td>
+<td class="data">2016M06</td>
+<td class="r data">29,284,258</td>
+<td class="r data">8,730,602</td>
+<td class="r data">7,056,492</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">176</th>
+<td class="data">Italy</td>
+<td class="data">2016M05</td>
+<td class="r data">20,905,200</td>
+<td class="r data">6,085,272</td>
+<td class="r data">4,004,204</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">177</th>
+<td class="data">Italy</td>
+<td class="data">2016M04</td>
+<td class="r data">16,092,528</td>
+<td class="r data">3,932,976</td>
+<td class="r data">1,241,280</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">178</th>
+<td class="data">Italy</td>
+<td class="data">2016M03</td>
+<td class="r data">16,585,556</td>
+<td class="r data">3,794,218</td>
+<td class="r data">764,684</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">179</th>
+<td class="data">Italy</td>
+<td class="data">2016M02</td>
+<td class="r data">13,663,106</td>
+<td class="r data">3,139,164</td>
+<td class="r data">201,778</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">180</th>
+<td class="data">Italy</td>
+<td class="data">2016M01</td>
+<td class="r data">12,531,285</td>
+<td class="r data">2,938,314</td>
+<td class="r data">274,078</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">181</th>
+<td class="data">Lithuania</td>
+<td class="data">2016M12</td>
+<td class="r data">256,675</td>
+<td class="r data">163,931</td>
+<td class="r data">268</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">182</th>
+<td class="data">Lithuania</td>
+<td class="data">2016M11</td>
+<td class="r data">254,454</td>
+<td class="r data">171,244</td>
+<td class="r data">618</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">183</th>
+<td class="data">Lithuania</td>
+<td class="data">2016M10</td>
+<td class="r data">297,271</td>
+<td class="r data">194,066</td>
+<td class="r data">387</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">184</th>
+<td class="data">Lithuania</td>
+<td class="data">2016M09</td>
+<td class="r data">354,404</td>
+<td class="r data">263,172</td>
+<td class="r data">3,103</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">185</th>
+<td class="data">Lithuania</td>
+<td class="data">2016M08</td>
+<td class="r data">474,825</td>
+<td class="r data">511,072</td>
+<td class="r data">21,344</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">186</th>
+<td class="data">Lithuania</td>
+<td class="data">2016M07</td>
+<td class="r data">458,287</td>
+<td class="r data">513,578</td>
+<td class="r data">22,985</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">187</th>
+<td class="data">Lithuania</td>
+<td class="data">2016M06</td>
+<td class="r data">397,805</td>
+<td class="r data">341,262</td>
+<td class="r data">14,198</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">188</th>
+<td class="data">Lithuania</td>
+<td class="data">2016M05</td>
+<td class="r data">363,393</td>
+<td class="r data">254,984</td>
+<td class="r data">4,264</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">189</th>
+<td class="data">Lithuania</td>
+<td class="data">2016M04</td>
+<td class="r data">280,424</td>
+<td class="r data">182,519</td>
+<td class="r data">430</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">190</th>
+<td class="data">Lithuania</td>
+<td class="data">2016M03</td>
+<td class="r data">256,429</td>
+<td class="r data">181,234</td>
+<td class="r data">166</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">191</th>
+<td class="data">Lithuania</td>
+<td class="data">2016M02</td>
+<td class="r data">212,905</td>
+<td class="r data">158,112</td>
+<td class="r data">150</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">192</th>
+<td class="data">Lithuania</td>
+<td class="data">2016M01</td>
+<td class="r data">228,406</td>
+<td class="r data">154,174</td>
+<td class="r data">135</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">193</th>
+<td class="data">Luxembourg</td>
+<td class="data">2016M12</td>
+<td class="r data">115,202</td>
+<td class="r data">13,285</td>
+<td class="r data">3,632</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">194</th>
+<td class="data">Luxembourg</td>
+<td class="data">2016M11</td>
+<td class="r data">127,208</td>
+<td class="r data">13,397</td>
+<td class="r data">8,234</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">195</th>
+<td class="data">Luxembourg</td>
+<td class="data">2016M10</td>
+<td class="r data">151,648</td>
+<td class="r data">20,444</td>
+<td class="r data">28,894</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">196</th>
+<td class="data">Luxembourg</td>
+<td class="data">2016M09</td>
+<td class="r data">167,115</td>
+<td class="r data">20,999</td>
+<td class="r data">48,243</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">197</th>
+<td class="data">Luxembourg</td>
+<td class="data">2016M08</td>
+<td class="r data">151,910</td>
+<td class="r data">32,093</td>
+<td class="r data">222,569</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">198</th>
+<td class="data">Luxembourg</td>
+<td class="data">2016M07</td>
+<td class="r data">164,717</td>
+<td class="r data">37,212</td>
+<td class="r data">271,547</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">199</th>
+<td class="data">Luxembourg</td>
+<td class="data">2016M06</td>
+<td class="r data">166,568</td>
+<td class="r data">21,376</td>
+<td class="r data">170,753</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">200</th>
+<td class="data">Luxembourg</td>
+<td class="data">2016M05</td>
+<td class="r data">172,051</td>
+<td class="r data">23,696</td>
+<td class="r data">144,719</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">201</th>
+<td class="data">Luxembourg</td>
+<td class="data">2016M04</td>
+<td class="r data">151,142</td>
+<td class="r data">19,048</td>
+<td class="r data">47,087</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">202</th>
+<td class="data">Luxembourg</td>
+<td class="data">2016M03</td>
+<td class="r data">147,166</td>
+<td class="r data">13,921</td>
+<td class="r data">5,443</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">203</th>
+<td class="data">Luxembourg</td>
+<td class="data">2016M02</td>
+<td class="r data">125,563</td>
+<td class="r data">9,296</td>
+<td class="r data">4,541</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">204</th>
+<td class="data">Luxembourg</td>
+<td class="data">2016M01</td>
+<td class="r data">113,174</td>
+<td class="r data">7,729</td>
+<td class="r data">13,971</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">205</th>
+<td class="data">Latvia</td>
+<td class="data">2016M12</td>
+<td class="r data">248,508</td>
+<td class="r data">43,095</td>
+<td class="r data">413</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">206</th>
+<td class="data">Latvia</td>
+<td class="data">2016M11</td>
+<td class="r data">228,064</td>
+<td class="r data">40,897</td>
+<td class="r data">315</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">207</th>
+<td class="data">Latvia</td>
+<td class="data">2016M10</td>
+<td class="r data">293,213</td>
+<td class="r data">46,590</td>
+<td class="r data">925</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">208</th>
+<td class="data">Latvia</td>
+<td class="data">2016M09</td>
+<td class="r data">314,523</td>
+<td class="r data">55,659</td>
+<td class="r data">4,388</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">209</th>
+<td class="data">Latvia</td>
+<td class="data">2016M08</td>
+<td class="r data">452,130</td>
+<td class="r data">111,260</td>
+<td class="r data">40,936</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">210</th>
+<td class="data">Latvia</td>
+<td class="data">2016M07</td>
+<td class="r data">455,551</td>
+<td class="r data">133,447</td>
+<td class="r data">54,723</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">211</th>
+<td class="data">Latvia</td>
+<td class="data">2016M06</td>
+<td class="r data">368,126</td>
+<td class="r data">76,728</td>
+<td class="r data">30,382</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">212</th>
+<td class="data">Latvia</td>
+<td class="data">2016M05</td>
+<td class="r data">320,485</td>
+<td class="r data">52,797</td>
+<td class="r data">5,311</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">213</th>
+<td class="data">Latvia</td>
+<td class="data">2016M04</td>
+<td class="r data">254,305</td>
+<td class="r data">44,409</td>
+<td class="r data">935</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">214</th>
+<td class="data">Latvia</td>
+<td class="data">2016M03</td>
+<td class="r data">226,913</td>
+<td class="r data">43,968</td>
+<td class="r data">507</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">215</th>
+<td class="data">Latvia</td>
+<td class="data">2016M02</td>
+<td class="r data">185,350</td>
+<td class="r data">40,622</td>
+<td class="r data">201</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">216</th>
+<td class="data">Latvia</td>
+<td class="data">2016M01</td>
+<td class="r data">200,403</td>
+<td class="r data">40,356</td>
+<td class="r data">162</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">217</th>
+<td class="data">Former Yugoslav Republic of Macedonia</td>
+<td class="data">2016M12</td>
+<td class="r data">63,073</td>
+<td class="r data">14,534</td>
+<td class="r data">132</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">218</th>
+<td class="data">Former Yugoslav Republic of Macedonia</td>
+<td class="data">2016M11</td>
+<td class="r data">65,588</td>
+<td class="r data">26,020</td>
+<td class="r data">81</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">219</th>
+<td class="data">Former Yugoslav Republic of Macedonia</td>
+<td class="data">2016M10</td>
+<td class="r data">109,813</td>
+<td class="r data">34,609</td>
+<td class="r data">233</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">220</th>
+<td class="data">Former Yugoslav Republic of Macedonia</td>
+<td class="data">2016M09</td>
+<td class="r data">154,159</td>
+<td class="r data">31,440</td>
+<td class="r data">784</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">221</th>
+<td class="data">Former Yugoslav Republic of Macedonia</td>
+<td class="data">2016M08</td>
+<td class="r data">178,059</td>
+<td class="r data">61,918</td>
+<td class="r data">17,985</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">222</th>
+<td class="data">Former Yugoslav Republic of Macedonia</td>
+<td class="data">2016M07</td>
+<td class="r data">180,486</td>
+<td class="r data">50,968</td>
+<td class="r data">16,998</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">223</th>
+<td class="data">Former Yugoslav Republic of Macedonia</td>
+<td class="data">2016M06</td>
+<td class="r data">135,265</td>
+<td class="r data">29,843</td>
+<td class="r data">2,842</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">224</th>
+<td class="data">Former Yugoslav Republic of Macedonia</td>
+<td class="data">2016M05</td>
+<td class="r data">136,439</td>
+<td class="r data">33,611</td>
+<td class="r data">504</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">225</th>
+<td class="data">Former Yugoslav Republic of Macedonia</td>
+<td class="data">2016M04</td>
+<td class="r data">87,219</td>
+<td class="r data">29,034</td>
+<td class="r data">76</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">226</th>
+<td class="data">Former Yugoslav Republic of Macedonia</td>
+<td class="data">2016M03</td>
+<td class="r data">67,133</td>
+<td class="r data">24,240</td>
+<td class="r data">77</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">227</th>
+<td class="data">Former Yugoslav Republic of Macedonia</td>
+<td class="data">2016M02</td>
+<td class="r data">58,196</td>
+<td class="r data">11,109</td>
+<td class="r data">44</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">228</th>
+<td class="data">Former Yugoslav Republic of Macedonia</td>
+<td class="data">2016M01</td>
+<td class="r data">57,672</td>
+<td class="r data">14,811</td>
+<td class="r data">89</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">229</th>
+<td class="data">Malta</td>
+<td class="data">2016M12</td>
+<td class="r data">486,637</td>
+<td class="r data">13,604</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">230</th>
+<td class="data">Malta</td>
+<td class="data">2016M11</td>
+<td class="r data">601,743</td>
+<td class="r data">18,377</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">231</th>
+<td class="data">Malta</td>
+<td class="data">2016M10</td>
+<td class="r data">856,492</td>
+<td class="r data">23,431</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">232</th>
+<td class="data">Malta</td>
+<td class="data">2016M09</td>
+<td class="r data">867,663</td>
+<td class="r data">22,497</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">233</th>
+<td class="data">Malta</td>
+<td class="data">2016M08</td>
+<td class="r data">1,038,092</td>
+<td class="r data">33,180</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">234</th>
+<td class="data">Malta</td>
+<td class="data">2016M07</td>
+<td class="r data">993,019</td>
+<td class="r data">36,633</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">235</th>
+<td class="data">Malta</td>
+<td class="data">2016M06</td>
+<td class="r data">848,232</td>
+<td class="r data">25,440</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">236</th>
+<td class="data">Malta</td>
+<td class="data">2016M05</td>
+<td class="r data">800,319</td>
+<td class="r data">25,545</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">237</th>
+<td class="data">Malta</td>
+<td class="data">2016M04</td>
+<td class="r data">714,864</td>
+<td class="r data">22,607</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">238</th>
+<td class="data">Malta</td>
+<td class="data">2016M03</td>
+<td class="r data">619,884</td>
+<td class="r data">19,805</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">239</th>
+<td class="data">Malta</td>
+<td class="data">2016M02</td>
+<td class="r data">472,106</td>
+<td class="r data">15,869</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">240</th>
+<td class="data">Malta</td>
+<td class="data">2016M01</td>
+<td class="r data">401,379</td>
+<td class="r data">13,773</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">241</th>
+<td class="data">Netherlands</td>
+<td class="data">2016M12</td>
+<td class="r data">3,099,545</td>
+<td class="r data">2,053,173</td>
+<td class="r data">65,866</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">242</th>
+<td class="data">Netherlands</td>
+<td class="data">2016M11</td>
+<td class="r data">3,233,644</td>
+<td class="r data">2,134,295</td>
+<td class="r data">83,551</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">243</th>
+<td class="data">Netherlands</td>
+<td class="data">2016M10</td>
+<td class="r data">4,040,545</td>
+<td class="r data">4,252,375</td>
+<td class="r data">1,027,470</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">244</th>
+<td class="data">Netherlands</td>
+<td class="data">2016M09</td>
+<td class="r data">4,016,650</td>
+<td class="r data">3,862,210</td>
+<td class="r data">2,251,374</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">245</th>
+<td class="data">Netherlands</td>
+<td class="data">2016M08</td>
+<td class="r data">4,746,938</td>
+<td class="r data">5,972,416</td>
+<td class="r data">6,416,888</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">246</th>
+<td class="data">Netherlands</td>
+<td class="data">2016M07</td>
+<td class="r data">4,488,433</td>
+<td class="r data">5,098,980</td>
+<td class="r data">4,628,505</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">247</th>
+<td class="data">Netherlands</td>
+<td class="data">2016M06</td>
+<td class="r data">3,903,938</td>
+<td class="r data">3,410,783</td>
+<td class="r data">2,348,281</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">248</th>
+<td class="data">Netherlands</td>
+<td class="data">2016M05</td>
+<td class="r data">4,217,752</td>
+<td class="r data">4,233,956</td>
+<td class="r data">2,821,168</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">249</th>
+<td class="data">Netherlands</td>
+<td class="data">2016M04</td>
+<td class="r data">3,840,554</td>
+<td class="r data">3,312,493</td>
+<td class="r data">882,225</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">250</th>
+<td class="data">Netherlands</td>
+<td class="data">2016M03</td>
+<td class="r data">3,469,173</td>
+<td class="r data">2,462,469</td>
+<td class="r data">276,314</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">251</th>
+<td class="data">Netherlands</td>
+<td class="data">2016M02</td>
+<td class="r data">2,860,264</td>
+<td class="r data">2,150,494</td>
+<td class="r data">40,335</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">252</th>
+<td class="data">Netherlands</td>
+<td class="data">2016M01</td>
+<td class="r data">2,672,540</td>
+<td class="r data">1,767,777</td>
+<td class="r data">69,442</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">253</th>
+<td class="data">Norway</td>
+<td class="data">2016M12</td>
+<td class="r data">1,182,939</td>
+<td class="r data">129,188</td>
+<td class="r data">120,479</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">254</th>
+<td class="data">Norway</td>
+<td class="data">2016M11</td>
+<td class="r data">1,576,988</td>
+<td class="r data">84,427</td>
+<td class="r data">126,192</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">255</th>
+<td class="data">Norway</td>
+<td class="data">2016M10</td>
+<td class="r data">1,696,948</td>
+<td class="r data">133,907</td>
+<td class="r data">196,533</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">256</th>
+<td class="data">Norway</td>
+<td class="data">2016M09</td>
+<td class="r data">2,022,447</td>
+<td class="r data">218,728</td>
+<td class="r data">430,624</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">257</th>
+<td class="data">Norway</td>
+<td class="data">2016M08</td>
+<td class="r data">2,773,642</td>
+<td class="r data">436,175</td>
+<td class="r data">1,435,100</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">258</th>
+<td class="data">Norway</td>
+<td class="data">2016M07</td>
+<td class="r data">3,118,851</td>
+<td class="r data">543,925</td>
+<td class="r data">2,542,688</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">259</th>
+<td class="data">Norway</td>
+<td class="data">2016M06</td>
+<td class="r data">2,465,521</td>
+<td class="r data">311,941</td>
+<td class="r data">1,237,683</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">260</th>
+<td class="data">Norway</td>
+<td class="data">2016M05</td>
+<td class="r data">1,628,099</td>
+<td class="r data">190,544</td>
+<td class="r data">649,027</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">261</th>
+<td class="data">Norway</td>
+<td class="data">2016M04</td>
+<td class="r data">1,566,164</td>
+<td class="r data">201,653</td>
+<td class="r data">218,031</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">262</th>
+<td class="data">Norway</td>
+<td class="data">2016M03</td>
+<td class="r data">1,642,001</td>
+<td class="r data">301,816</td>
+<td class="r data">256,801</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">263</th>
+<td class="data">Norway</td>
+<td class="data">2016M02</td>
+<td class="r data">1,632,891</td>
+<td class="r data">260,744</td>
+<td class="r data">165,945</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">264</th>
+<td class="data">Norway</td>
+<td class="data">2016M01</td>
+<td class="r data">1,315,989</td>
+<td class="r data">186,965</td>
+<td class="r data">111,866</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">265</th>
+<td class="data">Poland</td>
+<td class="data">2016M12</td>
+<td class="r data">2,944,256</td>
+<td class="r data">1,514,622</td>
+<td class="r data">957</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">266</th>
+<td class="data">Poland</td>
+<td class="data">2016M11</td>
+<td class="r data">3,131,100</td>
+<td class="r data">1,644,169</td>
+<td class="r data">1,205</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">267</th>
+<td class="data">Poland</td>
+<td class="data">2016M10</td>
+<td class="r data">3,762,751</td>
+<td class="r data">2,040,779</td>
+<td class="r data">5,261</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">268</th>
+<td class="data">Poland</td>
+<td class="data">2016M09</td>
+<td class="r data">4,277,860</td>
+<td class="r data">3,021,781</td>
+<td class="r data">44,097</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">269</th>
+<td class="data">Poland</td>
+<td class="data">2016M08</td>
+<td class="r data">5,194,227</td>
+<td class="r data">6,211,814</td>
+<td class="r data">406,556</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">270</th>
+<td class="data">Poland</td>
+<td class="data">2016M07</td>
+<td class="r data">5,021,976</td>
+<td class="r data">6,527,864</td>
+<td class="r data">469,979</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">271</th>
+<td class="data">Poland</td>
+<td class="data">2016M06</td>
+<td class="r data">4,170,414</td>
+<td class="r data">3,505,313</td>
+<td class="r data">94,061</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">272</th>
+<td class="data">Poland</td>
+<td class="data">2016M05</td>
+<td class="r data">3,864,672</td>
+<td class="r data">2,654,004</td>
+<td class="r data">37,742</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">273</th>
+<td class="data">Poland</td>
+<td class="data">2016M04</td>
+<td class="r data">3,292,269</td>
+<td class="r data">1,784,806</td>
+<td class="r data">2,802</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">274</th>
+<td class="data">Poland</td>
+<td class="data">2016M03</td>
+<td class="r data">2,965,502</td>
+<td class="r data">1,609,559</td>
+<td class="r data">1,290</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">275</th>
+<td class="data">Poland</td>
+<td class="data">2016M02</td>
+<td class="r data">2,992,998</td>
+<td class="r data">1,926,406</td>
+<td class="r data">646</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">276</th>
+<td class="data">Poland</td>
+<td class="data">2016M01</td>
+<td class="r data">2,705,423</td>
+<td class="r data">1,563,874</td>
+<td class="r data">825</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">277</th>
+<td class="data">Portugal</td>
+<td class="data">2016M12</td>
+<td class="r data">2,562,911</td>
+<td class="r data">213,018</td>
+<td class="r data">171,396</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">278</th>
+<td class="data">Portugal</td>
+<td class="data">2016M11</td>
+<td class="r data">2,981,596</td>
+<td class="r data">212,472</td>
+<td class="r data">192,123</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">279</th>
+<td class="data">Portugal</td>
+<td class="data">2016M10</td>
+<td class="r data">5,187,359</td>
+<td class="r data">357,718</td>
+<td class="r data">303,336</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">280</th>
+<td class="data">Portugal</td>
+<td class="data">2016M09</td>
+<td class="r data">6,176,750</td>
+<td class="r data">480,097</td>
+<td class="r data">720,314</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">281</th>
+<td class="data">Portugal</td>
+<td class="data">2016M08</td>
+<td class="r data">7,804,064</td>
+<td class="r data">744,140</td>
+<td class="r data">2,127,111</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">282</th>
+<td class="data">Portugal</td>
+<td class="data">2016M07</td>
+<td class="r data">6,770,458</td>
+<td class="r data">591,279</td>
+<td class="r data">1,338,705</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">283</th>
+<td class="data">Portugal</td>
+<td class="data">2016M06</td>
+<td class="r data">5,713,928</td>
+<td class="r data">427,201</td>
+<td class="r data">561,632</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">284</th>
+<td class="data">Portugal</td>
+<td class="data">2016M05</td>
+<td class="r data">5,196,010</td>
+<td class="r data">317,451</td>
+<td class="r data">332,879</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">285</th>
+<td class="data">Portugal</td>
+<td class="data">2016M04</td>
+<td class="r data">4,216,460</td>
+<td class="r data">262,745</td>
+<td class="r data">231,973</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">286</th>
+<td class="data">Portugal</td>
+<td class="data">2016M03</td>
+<td class="r data">3,798,115</td>
+<td class="r data">236,723</td>
+<td class="r data">247,372</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">287</th>
+<td class="data">Portugal</td>
+<td class="data">2016M02</td>
+<td class="r data">2,651,331</td>
+<td class="r data">164,658</td>
+<td class="r data">199,331</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">288</th>
+<td class="data">Portugal</td>
+<td class="data">2016M01</td>
+<td class="r data">2,199,245</td>
+<td class="r data">136,245</td>
+<td class="r data">186,080</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">289</th>
+<td class="data">Romania</td>
+<td class="data">2016M12</td>
+<td class="r data">1,137,314</td>
+<td class="r data">287,520</td>
+<td class="r data">1,395</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">290</th>
+<td class="data">Romania</td>
+<td class="data">2016M11</td>
+<td class="r data">1,419,616</td>
+<td class="r data">231,221</td>
+<td class="r data">602</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">291</th>
+<td class="data">Romania</td>
+<td class="data">2016M10</td>
+<td class="r data">1,674,559</td>
+<td class="r data">270,617</td>
+<td class="r data">868</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">292</th>
+<td class="data">Romania</td>
+<td class="data">2016M09</td>
+<td class="r data">2,198,796</td>
+<td class="r data">367,353</td>
+<td class="r data">14,435</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">293</th>
+<td class="data">Romania</td>
+<td class="data">2016M08</td>
+<td class="r data">3,623,845</td>
+<td class="r data">647,983</td>
+<td class="r data">99,064</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">294</th>
+<td class="data">Romania</td>
+<td class="data">2016M07</td>
+<td class="r data">3,266,376</td>
+<td class="r data">530,698</td>
+<td class="r data">80,500</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">295</th>
+<td class="data">Romania</td>
+<td class="data">2016M06</td>
+<td class="r data">2,056,318</td>
+<td class="r data">326,110</td>
+<td class="r data">30,764</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">296</th>
+<td class="data">Romania</td>
+<td class="data">2016M05</td>
+<td class="r data">1,622,340</td>
+<td class="r data">281,262</td>
+<td class="r data">4,360</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">297</th>
+<td class="data">Romania</td>
+<td class="data">2016M04</td>
+<td class="r data">1,236,801</td>
+<td class="r data">233,661</td>
+<td class="r data">1,077</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">298</th>
+<td class="data">Romania</td>
+<td class="data">2016M03</td>
+<td class="r data">1,041,265</td>
+<td class="r data">194,891</td>
+<td class="r data">352</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">299</th>
+<td class="data">Romania</td>
+<td class="data">2016M02</td>
+<td class="r data">1,031,352</td>
+<td class="r data">216,081</td>
+<td class="r data">291</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">300</th>
+<td class="data">Romania</td>
+<td class="data">2016M01</td>
+<td class="r data">924,381</td>
+<td class="r data">219,829</td>
+<td class="r data">1,004</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">301</th>
+<td class="data">Sweden</td>
+<td class="data">2016M12</td>
+<td class="r data">2,305,808</td>
+<td class="r data">344,368</td>
+<td class="r data">199,418</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">302</th>
+<td class="data">Sweden</td>
+<td class="data">2016M11</td>
+<td class="r data">2,710,132</td>
+<td class="r data">295,693</td>
+<td class="r data">219,076</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">303</th>
+<td class="data">Sweden</td>
+<td class="data">2016M10</td>
+<td class="r data">2,931,204</td>
+<td class="r data">333,770</td>
+<td class="r data">313,866</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">304</th>
+<td class="data">Sweden</td>
+<td class="data">2016M09</td>
+<td class="r data">3,111,928</td>
+<td class="r data">425,381</td>
+<td class="r data">554,292</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">305</th>
+<td class="data">Sweden</td>
+<td class="data">2016M08</td>
+<td class="r data">3,960,197</td>
+<td class="r data">836,706</td>
+<td class="r data">3,347,415</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">306</th>
+<td class="data">Sweden</td>
+<td class="data">2016M07</td>
+<td class="r data">4,641,986</td>
+<td class="r data">1,133,632</td>
+<td class="r data">6,254,069</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">307</th>
+<td class="data">Sweden</td>
+<td class="data">2016M06</td>
+<td class="r data">3,197,630</td>
+<td class="r data">548,307</td>
+<td class="r data">2,163,853</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">308</th>
+<td class="data">Sweden</td>
+<td class="data">2016M05</td>
+<td class="r data">2,988,283</td>
+<td class="r data">391,993</td>
+<td class="r data">1,326,194</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">309</th>
+<td class="data">Sweden</td>
+<td class="data">2016M04</td>
+<td class="r data">2,625,878</td>
+<td class="r data">409,664</td>
+<td class="r data">370,248</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">310</th>
+<td class="data">Sweden</td>
+<td class="data">2016M03</td>
+<td class="r data">2,508,191</td>
+<td class="r data">619,848</td>
+<td class="r data">353,635</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">311</th>
+<td class="data">Sweden</td>
+<td class="data">2016M02</td>
+<td class="r data">2,302,357</td>
+<td class="r data">529,067</td>
+<td class="r data">276,347</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">312</th>
+<td class="data">Sweden</td>
+<td class="data">2016M01</td>
+<td class="r data">2,031,832</td>
+<td class="r data">412,706</td>
+<td class="r data">259,174</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">313</th>
+<td class="data">Slovenia</td>
+<td class="data">2016M12</td>
+<td class="r data">462,037</td>
+<td class="r data">109,688</td>
+<td class="r data">25,275</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">314</th>
+<td class="data">Slovenia</td>
+<td class="data">2016M11</td>
+<td class="r data">425,267</td>
+<td class="r data">83,310</td>
+<td class="r data">24,314</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">315</th>
+<td class="data">Slovenia</td>
+<td class="data">2016M10</td>
+<td class="r data">595,504</td>
+<td class="r data">130,603</td>
+<td class="r data">44,122</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">316</th>
+<td class="data">Slovenia</td>
+<td class="data">2016M09</td>
+<td class="r data">680,032</td>
+<td class="r data">207,256</td>
+<td class="r data">134,709</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">317</th>
+<td class="data">Slovenia</td>
+<td class="data">2016M08</td>
+<td class="r data">973,151</td>
+<td class="r data">439,911</td>
+<td class="r data">454,135</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">318</th>
+<td class="data">Slovenia</td>
+<td class="data">2016M07</td>
+<td class="r data">860,367</td>
+<td class="r data">370,591</td>
+<td class="r data">374,268</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">319</th>
+<td class="data">Slovenia</td>
+<td class="data">2016M06</td>
+<td class="r data">644,661</td>
+<td class="r data">196,449</td>
+<td class="r data">130,341</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">320</th>
+<td class="data">Slovenia</td>
+<td class="data">2016M05</td>
+<td class="r data">560,197</td>
+<td class="r data">143,285</td>
+<td class="r data">96,528</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">321</th>
+<td class="data">Slovenia</td>
+<td class="data">2016M04</td>
+<td class="r data">476,968</td>
+<td class="r data">112,010</td>
+<td class="r data">45,186</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">322</th>
+<td class="data">Slovenia</td>
+<td class="data">2016M03</td>
+<td class="r data">479,117</td>
+<td class="r data">120,750</td>
+<td class="r data">26,633</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">323</th>
+<td class="data">Slovenia</td>
+<td class="data">2016M02</td>
+<td class="r data">461,157</td>
+<td class="r data">144,249</td>
+<td class="r data">22,375</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">324</th>
+<td class="data">Slovenia</td>
+<td class="data">2016M01</td>
+<td class="r data">452,635</td>
+<td class="r data">124,807</td>
+<td class="r data">18,915</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">325</th>
+<td class="data">Slovakia</td>
+<td class="data">2016M12</td>
+<td class="r data">593,743</td>
+<td class="r data">191,646</td>
+<td class="r data">723</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">326</th>
+<td class="data">Slovakia</td>
+<td class="data">2016M11</td>
+<td class="r data">645,111</td>
+<td class="r data">270,560</td>
+<td class="r data">847</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">327</th>
+<td class="data">Slovakia</td>
+<td class="data">2016M10</td>
+<td class="r data">811,304</td>
+<td class="r data">310,998</td>
+<td class="r data">2,489</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">328</th>
+<td class="data">Slovakia</td>
+<td class="data">2016M09</td>
+<td class="r data">924,913</td>
+<td class="r data">338,214</td>
+<td class="r data">12,414</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">329</th>
+<td class="data">Slovakia</td>
+<td class="data">2016M08</td>
+<td class="r data">1,168,657</td>
+<td class="r data">595,622</td>
+<td class="r data">131,485</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">330</th>
+<td class="data">Slovakia</td>
+<td class="data">2016M07</td>
+<td class="r data">1,116,684</td>
+<td class="r data">603,559</td>
+<td class="r data">114,746</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">331</th>
+<td class="data">Slovakia</td>
+<td class="data">2016M06</td>
+<td class="r data">837,791</td>
+<td class="r data">362,064</td>
+<td class="r data">20,431</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">332</th>
+<td class="data">Slovakia</td>
+<td class="data">2016M05</td>
+<td class="r data">760,334</td>
+<td class="r data">310,405</td>
+<td class="r data">5,652</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">333</th>
+<td class="data">Slovakia</td>
+<td class="data">2016M04</td>
+<td class="r data">638,434</td>
+<td class="r data">253,590</td>
+<td class="r data">1,509</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">334</th>
+<td class="data">Slovakia</td>
+<td class="data">2016M03</td>
+<td class="r data">702,215</td>
+<td class="r data">262,560</td>
+<td class="r data">2,228</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">335</th>
+<td class="data">Slovakia</td>
+<td class="data">2016M02</td>
+<td class="r data">759,001</td>
+<td class="r data">276,797</td>
+<td class="r data">512</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">336</th>
+<td class="data">Slovakia</td>
+<td class="data">2016M01</td>
+<td class="r data">652,401</td>
+<td class="r data">214,547</td>
+<td class="r data">596</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">337</th>
+<td class="data">United Kingdom</td>
+<td class="data">2016M12</td>
+<td class="r data">13,772,108</td>
+<td class="r data">6,023,765</td>
+<td class="r data">437,242</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">338</th>
+<td class="data">United Kingdom</td>
+<td class="data">2016M11</td>
+<td class="r data">13,053,352</td>
+<td class="r data">2,672,816</td>
+<td class="r data">654,763</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">339</th>
+<td class="data">United Kingdom</td>
+<td class="data">2016M10</td>
+<td class="r data">15,505,667</td>
+<td class="r data">4,720,588</td>
+<td class="r data">3,481,335</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">340</th>
+<td class="data">United Kingdom</td>
+<td class="data">2016M09</td>
+<td class="r data">16,042,448</td>
+<td class="r data">6,751,062</td>
+<td class="r data">5,630,337</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">341</th>
+<td class="data">United Kingdom</td>
+<td class="data">2016M08</td>
+<td class="r data">20,998,957</td>
+<td class="r data">10,918,043</td>
+<td class="r data">10,935,663</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">342</th>
+<td class="data">United Kingdom</td>
+<td class="data">2016M07</td>
+<td class="r data">19,245,159</td>
+<td class="r data">9,588,949</td>
+<td class="r data">7,815,659</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">343</th>
+<td class="data">United Kingdom</td>
+<td class="data">2016M06</td>
+<td class="r data">17,787,851</td>
+<td class="r data">6,575,076</td>
+<td class="r data">4,846,397</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">344</th>
+<td class="data">United Kingdom</td>
+<td class="data">2016M05</td>
+<td class="r data">14,811,451</td>
+<td class="r data">7,820,198</td>
+<td class="r data">6,237,354</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">345</th>
+<td class="data">United Kingdom</td>
+<td class="data">2016M04</td>
+<td class="r data">13,788,240</td>
+<td class="r data">5,619,281</td>
+<td class="r data">4,665,842</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">346</th>
+<td class="data">United Kingdom</td>
+<td class="data">2016M03</td>
+<td class="r data">12,239,798</td>
+<td class="r data">4,663,424</td>
+<td class="r data">1,524,859</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">347</th>
+<td class="data">United Kingdom</td>
+<td class="data">2016M02</td>
+<td class="r data">10,478,239</td>
+<td class="r data">3,022,689</td>
+<td class="r data">337,125</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">348</th>
+<td class="data">United Kingdom</td>
+<td class="data">2016M01</td>
+<td class="r data">9,789,043</td>
+<td class="r data">2,612,609</td>
+<td class="r data">497,162</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</div>
+</body>
+</html>

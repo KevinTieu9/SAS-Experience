@@ -1,0 +1,39 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 refers to the same physical library as _TEMP0.
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 74         
+ 75         data eu_occ2016;
+ 76         set pg1.eu_occ;
+ 77         where YearMon like "2016%";
+ 78         format Hotel ShortStay Camp comma17.;
+ 79         drop geo;
+ 80         run;
+ 
+ NOTE: There were 348 observations read from the data set PG1.EU_OCC.
+       WHERE YearMon like '2016%';
+ NOTE: The data set WORK.EU_OCC2016 has 348 observations and 5 variables.
+ NOTE: DATA statement used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.00 seconds
+       system cpu time     0.00 seconds
+       memory              1237.21k
+       OS Memory           33068.00k
+       Timestamp           07/08/2021 01:13:29 AM
+       Step Count                        51  Switch Count  4
+       Page Faults                       0
+       Page Reclaims                     271
+       Page Swaps                        0
+       Voluntary Context Switches        23
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           264
+       
+ 
+ 81         
+ 82         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 94         

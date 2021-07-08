@@ -1,0 +1,69 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         ***********************************************************;
+ 74         *  LESSON 4, PRACTICE 7                                   *;
+ 75         *    a) Submit the program and view the generated output. *;
+ 76         *    b) In the DATA step, use IF-THEN/ELSE statements to  *;
+ 77         *       create a new column, ParkType, based on the value *;
+ 78         *       of Type.                                          *;
+ 79         *       NM -> Monument                                    *;
+ 80         *       NP -> Park                                        *;
+ 81         *       NPRE, PRE, or PRESERVE -> Preserve                *;
+ 82         *       NS -> Seashore                                    *;
+ 83         *       RVR or RIVERWAYS -> River                         *;
+ 84         *    c) Modify the PROC FREQ step to generate a frequency *;
+ 85         *       report for ParkType.                              *;
+ 86         ***********************************************************;
+ 87         
+ 88         data park_type;
+ 89         set pg1.np_summary;
+ 90         *Add IF-THEN-ELSE statements;
+ 91         run;
+ 
+ NOTE: There were 135 observations read from the data set PG1.NP_SUMMARY.
+ NOTE: The data set WORK.PARK_TYPE has 135 observations and 10 variables.
+ NOTE: DATA statement used (Total process time):
+       real time           0.00 seconds
+       user cpu time       0.01 seconds
+       system cpu time     0.00 seconds
+       memory              951.06k
+       OS Memory           33196.00k
+       Timestamp           07/08/2021 02:13:03 AM
+       Step Count                        126  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     197
+       Page Swaps                        0
+       Voluntary Context Switches        20
+       Involuntary Context Switches      0
+       Block Input Operations            288
+       Block Output Operations           264
+       
+ 
+ 92         
+ 93         proc freq data=park_type;
+ 94         tables Type;
+ 95         run;
+ 
+ NOTE: There were 135 observations read from the data set WORK.PARK_TYPE.
+ NOTE: PROCEDURE FREQ used (Total process time):
+       real time           0.04 seconds
+       user cpu time       0.04 seconds
+       system cpu time     0.01 seconds
+       memory              2643.87k
+       OS Memory           33708.00k
+       Timestamp           07/08/2021 02:13:04 AM
+       Step Count                        127  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     392
+       Page Swaps                        0
+       Voluntary Context Switches        9
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           272
+       
+ 
+ 96         
+ 97         
+ 98         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 110        
