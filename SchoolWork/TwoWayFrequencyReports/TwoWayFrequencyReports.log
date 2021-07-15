@@ -1,0 +1,74 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ NOTE: ODS statements in the SAS Studio environment may disable some output features.
+ 73         
+ 74         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 75         
+ 76         title1 'Park Types by Region';
+ 77         
+ 78         proc freq data=pg1.np_codelookup order=freq;
+ 79             tables Type*Region / nocol crosslist;
+ 80             where Type not like '%Other%';
+ 81         run;
+ 
+ NOTE: There were 704 observations read from the data set PG1.NP_CODELOOKUP.
+       WHERE Type not like '%Other%';
+ NOTE: PROCEDURE FREQ used (Total process time):
+       real time           0.20 seconds
+       user cpu time       0.20 seconds
+       system cpu time     0.00 seconds
+       memory              5063.21k
+       OS Memory           38320.00k
+       Timestamp           07/15/2021 04:41:08 AM
+       Step Count                        325  Switch Count  4
+       Page Faults                       0
+       Page Reclaims                     625
+       Page Swaps                        0
+       Voluntary Context Switches        24
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           608
+       
+ 
+ 82         
+ 83         title2 'Selected Park Types by Region';
+ 84         
+ 85         ods graphics on;
+ 86         ods noproctitle;
+ 87         
+ 88         proc freq data=pg1.np_codelookup order=freq;
+ 89             tables Type*Region / nocol crosslist
+ 90             plots = freqplot (groupby=row scale=grouppercent orient=horizontal);
+ 91                     where Type in ('National Historic Site',
+ 92                'National Monument',
+ 93                'National Park');
+ 94         run;
+ 
+ NOTE: There were 204 observations read from the data set PG1.NP_CODELOOKUP.
+       WHERE Type in ('National Historic Site', 'National Monument', 'National Park');
+ NOTE: PROCEDURE FREQ used (Total process time):
+       real time           0.43 seconds
+       user cpu time       0.15 seconds
+       system cpu time     0.03 seconds
+       memory              19103.03k
+       OS Memory           55728.00k
+       Timestamp           07/15/2021 04:41:08 AM
+       Step Count                        326  Switch Count  5
+       Page Faults                       0
+       Page Reclaims                     5346
+       Page Swaps                        0
+       Voluntary Context Switches        435
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           1696
+       
+ 
+ 95         
+ 96         title;
+ 97         ods proctitle;
+ 98         
+ 99         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 111        

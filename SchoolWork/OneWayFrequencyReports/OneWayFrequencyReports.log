@@ -1,0 +1,69 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ NOTE: ODS statements in the SAS Studio environment may disable some output features.
+ 73         
+ 74         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 75         
+ 76         title1 'Categories of Reported Species';
+ 77         ods graphics on;
+ 78         ods noproctitle;
+ 79         proc freq data=pg1.np_species order=freq;
+ 80             tables Category / NOCUM;
+ 81         run;
+ 
+ NOTE: There were 17706 observations read from the data set PG1.NP_SPECIES.
+ NOTE: PROCEDURE FREQ used (Total process time):
+       real time           0.04 seconds
+       user cpu time       0.04 seconds
+       system cpu time     0.00 seconds
+       memory              4102.96k
+       OS Memory           36012.00k
+       Timestamp           07/15/2021 03:21:02 AM
+       Step Count                        60  Switch Count  2
+       Page Faults                       0
+       Page Reclaims                     503
+       Page Swaps                        0
+       Voluntary Context Switches        16
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           280
+       
+ 
+ 82         title;
+ 83         ods proctitle;
+ 84         
+ 85         title2 'in the Everglades';
+ 86         ods graphics on;
+ 87         ods noproctitle;
+ 88         proc freq data=pg1.np_species order=freq;
+ 89             tables Category / NOCUM plots=freqplot;
+ 90             where Species_ID like "EVER%" and not(Category='Vascular Plant');
+ 91         run;
+ 
+ NOTE: There were 147 observations read from the data set PG1.NP_SPECIES.
+       WHERE Species_ID like 'EVER%' and (Category not = 'Vascular Plant');
+ NOTE: PROCEDURE FREQ used (Total process time):
+       real time           0.25 seconds
+       user cpu time       0.11 seconds
+       system cpu time     0.03 seconds
+       memory              21256.28k
+       OS Memory           53676.00k
+       Timestamp           07/15/2021 03:21:02 AM
+       Step Count                        61  Switch Count  3
+       Page Faults                       0
+       Page Reclaims                     5593
+       Page Swaps                        0
+       Voluntary Context Switches        302
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           1248
+       
+ 
+ 92         title;
+ 93         ods proctitle;
+ 94         
+ 95         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 107        
