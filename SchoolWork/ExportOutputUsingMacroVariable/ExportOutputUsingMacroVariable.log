@@ -1,0 +1,154 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 74         
+ 75         %let outpath=/home/u58811620/CISP357/output;
+ 76         
+ 77         proc export data=pg1.storm_final
+ 78         outfile="&outpath/storm_final.csv"
+ 79         dbms=csv replace;
+ 80         
+ 81         run;
+ 
+ NOTE: Unable to open parameter catalog: SASUSER.PARMS.PARMS.SLIST in update mode. Temporary parameter values will be saved to 
+ WORK.PARMS.PARMS.SLIST.
+ 82          /**********************************************************************
+ 83          *   PRODUCT:   SAS
+ 84          *   VERSION:   9.4
+ 85          *   CREATOR:   External File Interface
+ 86          *   DATE:      20JUL21
+ 87          *   DESC:      Generated SAS Datastep Code
+ 88          *   TEMPLATE SOURCE:  (None Specified.)
+ 89          ***********************************************************************/
+ 90             data _null_;
+ 91             %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+ 92             %let _EFIREC_ = 0;     /* clear export record count macro variable */
+ 93             file '/home/u58811620/CISP357/output/storm_final.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+ 94             if _n_ = 1 then        /* write column names or labels */
+ 95              do;
+ 96                put
+ 97                   "Season"
+ 98                ','
+ 99                   "Name"
+ 100               ','
+ 101                  "Basin"
+ 102               ','
+ 103                  "BasinName"
+ 104               ','
+ 105                  "OceanCode"
+ 106               ','
+ 107                  "Ocean"
+ 108               ','
+ 109                  "StormType"
+ 110               ','
+ 111                  "MaxWindMPH"
+ 112               ','
+ 113                  "MaxWindKM"
+ 114               ','
+ 115                  "MinPressure"
+ 116               ','
+ 117                  "StartDate"
+ 118               ','
+ 119                  "EndDate"
+ 120               ','
+ 121                  "StormLength"
+ 122               ','
+ 123                  "Lat"
+ 124               ','
+ 125                  "Lon"
+ 126               ;
+ 127             end;
+ 128           set  PG1.STORM_FINAL   end=EFIEOD;
+ 129               format Season best4. ;
+ 130               format Name $char57. ;
+ 131               format Basin $char2. ;
+ 132               format BasinName $14. ;
+ 133               format OceanCode $2. ;
+ 134               format Ocean $8. ;
+ 135               format StormType $13. ;
+ 136               format MaxWindMPH best12. ;
+ 137               format MaxWindKM 3. ;
+ 138               format MinPressure best12. ;
+ 139               format StartDate date9. ;
+ 140               format EndDate date9. ;
+ 141               format StormLength best12. ;
+ 142               format Lat best12. ;
+ 143               format Lon best12. ;
+ 144             do;
+ 145               EFIOUT + 1;
+ 146               put Season @;
+ 147               put Name $ @;
+ 148               put Basin $ @;
+ 149               put BasinName $ @;
+ 150               put OceanCode $ @;
+ 151               put Ocean $ @;
+ 152               put StormType $ @;
+ 153               put MaxWindMPH @;
+ 154               put MaxWindKM @;
+ 155               put MinPressure @;
+ 156               put StartDate @;
+ 157               put EndDate @;
+ 158               put StormLength @;
+ 159               put Lat @;
+ 160               put Lon ;
+ 161               ;
+ 162             end;
+ 163            if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+ 164            if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+ 165            run;
+ 
+ NOTE: The file '/home/u58811620/CISP357/output/storm_final.csv' is:
+       Filename=/home/u58811620/CISP357/output/storm_final.csv,
+       Owner Name=u58811620,Group Name=oda,
+       Access Permission=-rw-r--r--,
+       Last Modified=20Jul2021:05:55:19
+ 
+ NOTE: 3093 records were written to the file '/home/u58811620/CISP357/output/storm_final.csv'.
+       The minimum record length was 69.
+       The maximum record length was 124.
+ NOTE: There were 3092 observations read from the data set PG1.STORM_FINAL.
+ NOTE: DATA statement used (Total process time):
+       real time           0.05 seconds
+       user cpu time       0.02 seconds
+       system cpu time     0.00 seconds
+       memory              11217.06k
+       OS Memory           40484.00k
+       Timestamp           07/20/2021 05:55:19 AM
+       Step Count                        74  Switch Count  0
+       Page Faults                       0
+       Page Reclaims                     267
+       Page Swaps                        0
+       Voluntary Context Switches        17
+       Involuntary Context Switches      0
+       Block Input Operations            768
+       Block Output Operations           568
+       
+ 
+ 3092 records created in /home/u58811620/CISP357/output/storm_final.csv from PG1.STORM_FINAL.
+   
+   
+ NOTE: "/home/u58811620/CISP357/output/storm_final.csv" file was successfully created.
+ NOTE: PROCEDURE EXPORT used (Total process time):
+       real time           0.11 seconds
+       user cpu time       0.05 seconds
+       system cpu time     0.02 seconds
+       memory              11217.06k
+       OS Memory           40744.00k
+       Timestamp           07/20/2021 05:55:19 AM
+       Step Count                        74  Switch Count  8
+       Page Faults                       0
+       Page Reclaims                     3988
+       Page Swaps                        0
+       Voluntary Context Switches        103
+       Involuntary Context Switches      0
+       Block Input Operations            1056
+       Block Output Operations           680
+       
+ 
+ 166        
+ 167        OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 179        

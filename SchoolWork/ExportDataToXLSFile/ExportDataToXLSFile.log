@@ -1,0 +1,45 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         libname pg1 "/home/u58811620/CISP357/data";
+ NOTE: Libref PG1 was successfully assigned as follows: 
+       Engine:        V9 
+       Physical Name: /home/u58811620/CISP357/data
+ 74         
+ 75         %let outpath=/home/u58811620/CISP357/output/;
+ 76         libname xl_lib XLSX "&outpath/storm.xlsx";
+ NOTE: Libref XL_LIB was successfully assigned as follows: 
+       Engine:        XLSX 
+       Physical Name: /home/u58811620/CISP357/output//storm.xlsx
+ 77         
+ 78         data xl_lib.storm_final;
+ 79             set pg1.storm_final;
+ 80             drop Lat Lon Basin OceanCode;
+ 81         run;
+ 
+ NOTE: There were 3092 observations read from the data set PG1.STORM_FINAL.
+ NOTE: The data set XL_LIB.storm_final has 3092 observations and 11 variables.
+ NOTE: The export data set has 3092 observations and 11 variables.
+ NOTE: DATA statement used (Total process time):
+       real time           0.16 seconds
+       user cpu time       0.16 seconds
+       system cpu time     0.01 seconds
+       memory              3303.21k
+       OS Memory           36196.00k
+       Timestamp           07/20/2021 06:16:43 AM
+       Step Count                        80  Switch Count  1
+       Page Faults                       0
+       Page Reclaims                     942
+       Page Swaps                        0
+       Voluntary Context Switches        27
+       Involuntary Context Switches      1
+       Block Input Operations            0
+       Block Output Operations           320
+       
+ 
+ 82         
+ 83         libname xl_lib clear;
+ NOTE: Libref XL_LIB has been deassigned.
+ 84         
+ 85         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 97         
